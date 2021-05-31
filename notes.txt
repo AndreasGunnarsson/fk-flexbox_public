@@ -1,0 +1,21 @@
+https://forsakringskassan.se/
+
+------
+Header:
+< 890px		- Använder en kompaktare header.
+
+------
+Main:
+< 1024px    	- Två kolumner istället för tre.
+< 640px		- En kolumn.
+
+------
+Footer:
+- Har från början 3 fält.
+< 1024px    	- Två rows istället för tre.
+		- 2 kolumner i varje row.
+< 640px		- "Följ oss på" (social) ändras.
+		- Allt ovanför ändras också..
+
+------
+< 1200px           - Sidan kan inte bli bredare än detta (även om bakgrunden för headern och footern går utanför).

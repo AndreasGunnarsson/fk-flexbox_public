@@ -1,0 +1,55 @@
+main    {
+    flex-direction: column;
+    /* flex: 3 0px; */
+}
+
+aside {
+    /* width: 200px; */
+    /* display: flex; */
+    /* flex: 1 100%; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+#aside_order_1 {
+    order: 1;
+}
+#aside_order_2 {
+    order: 3;
+}
+#aside_order_3 {
+    order: 5;
+}
+#aside_order_4 {
+    order: 2;
+}
+#aside_order_5 {
+    order: 4;
+}
+/* ---------------- FOOTER */
+
+#items_container {
+    /* background-color: brown; */
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+
+#one_column_footer {
+    /* background-color: pink; */
+    width: 100%;
+}
+
+#two_column_footer_container {
+    /* background-color: plum; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    width: 100%;
+    /* flex-basis: auto; */
+}
+
+/* .two_column_width { */
+/*     width: 50%; */
+/* } */

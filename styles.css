@@ -1,0 +1,389 @@
+html {
+    font-size: 16px;
+    font-family: NeueHaas, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    background-color: #e6e6e6;
+}
+
+body {
+    margin: 0;
+}
+
+/* ska alltid ha höjden 88px */
+header {
+    background-color: #116a3e;
+    height: 70px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: red; 
+    border-bottom-width: .25rem;
+    box-shadow: 0 -2px 0 0 #0c7340,-2px 0 0 0 #0c7340,2px 0 0 0 #0c7340,0 0 2px 0 rgba(0,0,0,.5);
+}
+
+
+#inside_header {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#header_logo {
+    /* width: 100%; */
+    padding-left: 10px;
+    height: 42px;
+}
+
+#header_buttons_container {
+    display: flex;
+    /* flex-direction: column; */
+    /* text-align: center; */
+    /* width: 500px; */
+    background-color: red;
+    /* white-space: nowrap; */
+}
+
+input {
+    width: 200px;
+    border-radius: 0;
+}
+
+.header_buttons {
+    /* height: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #297952;
+    border: none;
+    margin-right: 24px;
+    padding-right: 14px;
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,.3);
+    /* background-image: url("images/small.png"); */
+    /* background-size: 16px; */
+    /* background-repeat: no-repeat; */
+    /* background-position: left; */
+}
+
+.header_buttons:hover {
+    background-color: black;
+}
+
+.header_button_image {
+    width: 22px;
+    height: 22px;
+    margin: 11px 10px;
+}
+
+span {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    /* vertical-align: middle; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    white-space: nowrap;
+}
+
+/* ------------------------- MAIN */
+
+main {
+    /* margin: auto; */
+    /* margin-top: 32px; */
+    /* margin-bottom: 40px; */
+    display: flex;
+    flex-direction: row;
+    margin: 32px auto 40px;
+    padding: 8px 10px 4px;
+    max-width: 1200px;
+    background-color: purple;
+}
+
+/* main > * { */
+/*   flex: 1 100%; */
+/* } */
+
+aside {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* flex: 1 100%; */
+    background-color: purple;
+}
+
+#aside_order_1 {      
+    order: 1;      
+}      
+#aside_order_2 {      
+    order: 2;      
+}      
+#aside_order_3 {      
+    order: 3;      
+}                             
+#aside_order_4 {              
+    order: 4;                 
+}                             
+#aside_order_5 {              
+    order: 5;                                                    
+}
+
+.two_cols {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.one_col {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+/* Allt under är taget från faktiska hemsidan. */
+.side_and_big_box {
+    padding: 0 1rem 2rem;
+    /* margin: 0 0 1.5rem; */ 
+    /* margin: 1.5rem 1.5rem; */
+    background: #fff;
+    /* display: block; */
+    /* overflow: hidden; */
+    width: 400px;                       /* TEMP */
+    max-width: 300px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+.inside_side_and_big_box {
+    background-color: beige;
+    border-top-style: solid;
+    border-top-color: #5f9e6c;
+    border-top-width: 0.5rem;
+    /* width: 90%; */
+    margin: auto;
+    /* height: 200px; */
+}
+
+.side_and_big_box:hover {
+    box-shadow: 0 1px 5px rgba(0,0,0,.6);
+}
+
+/* har också några element i sig som antagligen bestämmer height. */
+.small_box {
+    padding: 16px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+/*    background-color: #fff; */
+    background-color: yellow;
+    margin: 0 0 1.5rem 0;
+    /* margin: 0 0 1.5rem; */
+    max-height: 144px;
+/*    height: 168px; */  /* plus 16px padding i top/bot, se nedan */
+    padding: 16px 12px;
+    width: 50%;
+}
+
+.inside_small_box1 {
+    background-color: navy;
+    height: 100px;
+}
+
+.inside_small_box {
+    /* padding: 5px; */
+    background-color: lightsalmon;
+    /* height: 12px; */
+    /* height: 80%; */
+    border-left-style: solid;
+    border-left-color: lightcyan;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    padding: 0 1rem;
+}
+
+#small_box_h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    background-image: url("./images/small.png");
+    background-size: 56px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 56px;
+    padding-left: 76px;
+    /* font-size: 1.75rem; */
+}
+
+/* ------------------------- FOOTER */
+footer {
+    width: 100%;
+    background-color: #116a3e;
+    border-top-style: solid;
+    border-top-color: #0c4329;
+    border-top-width: 0.5rem;
+}
+
+.padding_footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#inside_footer_container {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#items_container {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#one_column_footer {
+    background-color: pink;
+    width: 33.333%;
+}
+
+#inside_one_column_footer {
+    background-color: olive;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#one_column_footer_h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url("./images/small.png");
+    background-size: 62px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 62px;
+    padding-left: 76px;
+    margin-top: 0;
+    /* font-size: 1.75rem; */
+}
+
+#two_column_footer_container {
+    background-color: plum;
+    display: flex;
+    flex-direction: row;
+    width: 66.666%;
+    flex-basis: auto;
+}
+
+.two_column_width {
+    width: 50%;
+}
+
+#footer_span {
+    color: white;
+}
+
+
+/* ------------------------- SOCIAL FOOTER */
+#social_footer {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    background-color: #1b1e23;
+    height: 57px;   /* Ska vara totalt 57 pixlar hög */
+    width: 100%;
+    /* padding-top: 10px; */
+    /* padding-top: 0px;       /1* Kolla på denna. height ska fortfarande vara 57px *1/ */
+    /* måste göra en vertical align på något sätt där allt alltid är i mitten */
+    /* kolla flexbox (men behöver inte all den funktionalitet som flexbox har)? */
+}
+
+#inside_social_footer {
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* padding: 1rem 0; */
+
+    /* position: relative; */
+    /* top: 50%; */
+    /* transform: translatey(-50%); */
+
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+
+    background-color: purple;
+    /* white-space: nowrap; */
+}
+
+/* #social_items { */
+/*     background-color: darkolivegreen; */
+/* } */
+
+#social_text {
+    font-size: 12px;
+    color: white;
+}
+
+#social_facebook {
+    background-image: url("./images/20x20-facebook.png");
+}
+
+#social_instagram {
+    background-image: url("./images/20x20-instagram.png");
+}
+
+#social_twitter {
+    background-image: url("./images/20x20-twitter.png");
+}
+
+#social_linkedin {
+    background-image: url("./images/20x20-linkedin.png");
+}
+
+#social_youtube {
+    background-image: url("./images/20x20-youtube.png");
+}
+
+.social_links {
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    color: #adadad;
+    font-weight: 700;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    display: inline-block;
+    padding: 5px 0 2px 20px;
+    margin-left: 20px;
+}
+
+/*@media screen and (max-width: 890px) {
+  header {
+    background-color: lightgreen;
+  }
+}*/
+
+/*
+ * #e6e6e6  - grå
+ * #116a3e - headerns gröna bakgrund
+ * #297952 - gröna knapper i headern.
+ * #a6d0ab - ljusgröna kanten under headern.
+ * #1b1e23 - social footer.
+ */

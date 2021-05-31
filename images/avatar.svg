@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+	 height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Lager_2">
+	<g>
+		<path fill="#FFFFFF" d="M11.997,23.672c0,0,7.23,0,10.224,0c0.193,0,0.349-0.156,0.349-0.354c0-3.858-2.533-6.69-8.144-6.69
+			c-2.095,0-2.428,0-2.428,0s-0.333,0-2.428,0c-5.781,0-8.141,2.811-8.141,6.576c0,0.297,0.141,0.469,0.422,0.469
+			c2.993,0,10.147,0,10.147,0H11.997z"/>
+		<circle fill="#FFFFFF" cx="11.998" cy="8.919" r="5.668"/>
+	</g>
+	<path display="none" fill="#006B35" d="M21.023,23.488H2.854l0.001-4.449c0.856-1.194,2.558-2.136,5.163-2.136h7.574
+		c3.037,0,4.532,0.886,5.428,1.951L21.023,23.488z"/>
+</g>
+<g id="Lager_1" display="none">
+	<path display="inline" fill="#006B35" d="M12,1C18.066,1,23,5.935,23,12C23,18.066,18.066,23,12,23C5.935,23,1,18.066,1,12
+		C1,5.935,5.935,1,12,1 M12,0C5.372,0,0,5.373,0,12c0,6.628,5.372,12,12,12C18.628,24,24,18.628,24,12C24,5.373,18.628,0,12,0L12,0z
+		"/>
+</g>
+</svg>
