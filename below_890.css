@@ -1,6 +1,6 @@
-header {
-    background-color: blue;
-}
+/* header { */
+/*     background-color: blue; */
+/* } */
 
 #inside_header {
     /* margin: auto; */
@@ -43,8 +43,7 @@ input {
     /* align-items: center; */
     /* align-content: center; */
     width: 33.33%;
-
-    background-color: cyan;
+    background-color: #0d462b;
     border: none;
     margin-right: 0;
     padding-right: 0;

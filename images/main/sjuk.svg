@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+	 height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Lager_2">
+	<g display="none">
+		
+			<rect x="-366.607" y="-130.945" display="inline" fill="#00662C" stroke="#00662C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="61.099" height="28.427"/>
+		
+			<polygon display="inline" fill="#FFFFFF" stroke="#00662C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			-366.607,27.657 -366.607,-102.518 -305.508,-102.518 -305.508,27.657 -336.056,77.379 		"/>
+		
+			<line display="inline" fill="none" stroke="#00662C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-336.057" y1="23.771" x2="-336.057" y2="-102.518"/>
+		
+			<line display="inline" fill="none" stroke="#00662C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-366.607" y1="27.657" x2="-305.508" y2="27.657"/>
+		<polygon display="inline" fill="#00662C" points="-323.274,55.039 -336.057,75.846 -348.841,55.039 		"/>
+	</g>
+	<g>
+		<path fill="#4C669F" d="M15.493,11.804h-0.998c-0.793,1.479-2.329,2.499-4.112,2.499c-1.741,0-3.246-0.971-4.055-2.394
+			c-0.533,0.074-1.107,0.199-1.577,0.419c-1.007,0.474-1.905,2.906-2.236,5.316c-0.063,0.462,2.357,2.881,2.357,2.881l0.53-3.635
+			l0.095,4.045c0,0,2.4,1.634,3.564,1.955c3.323,0.918,6.574,0.611,6.556,0.156C15.555,21.336,15.493,11.804,15.493,11.804z"/>
+	</g>
+	<path fill="#4C669F" d="M12.191,9.217c-1.284-0.327-2.078-1.674-1.77-3.003c0.049-0.209,0.128-0.401,0.222-0.583
+		c-0.088-0.006-0.172-0.027-0.261-0.027c-2.173,0-3.941,1.783-3.941,3.974c0,2.192,1.768,3.976,3.941,3.976
+		c2.081,0,3.772-1.64,3.914-3.704C13.663,9.632,12.962,9.414,12.191,9.217z"/>
+	<path fill="#4C669F" d="M15.161,15.506c3.52-0.563,5.769-2.303,6.329-3.119c0.694-1.014,0.781-1.839,0.527-2.638
+		c-0.635-1.997-6.175-3.962-8.854-4.646c-0.893-0.229-1.794,0.347-2.012,1.285c-0.217,0.939,0.331,1.885,1.224,2.113
+		c2.772,0.709,4.673,1.557,5.831,2.228c-0.553,0.599-3.401,1.104-3.401,1.104S14.242,15.506,15.161,15.506z"/>
+</g>
+<g id="Lager_1">
+	<path fill="#4C669F" d="M12,1C18.066,1,23,5.935,23,12C23,18.066,18.066,23,12,23C5.935,23,1,18.066,1,12C1,5.935,5.935,1,12,1
+		 M12,0C5.372,0,0,5.373,0,12c0,6.628,5.372,12,12,12C18.628,24,24,18.628,24,12C24,5.373,18.628,0,12,0L12,0z"/>
+</g>
+</svg>

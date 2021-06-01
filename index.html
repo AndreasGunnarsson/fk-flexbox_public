@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Försakringskassan</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" media="screen and (max-width: 1024px)" href="below_1024.css">
@@ -13,99 +14,233 @@
                 <div id="header_buttons_container">
                     <input type="text" placeholder="Sök här">
                     <button class="header_buttons">
-                        <img class="header_button_image" src="./images/magnifier.svg">
-                        <span>Sök</span>
+                        <img class="header_button_image" src="./images/header/magnifier.svg">
+                        <span class="header_text">Sök</span>
                     </button>
                     <button class="header_buttons">
-                        <img class="header_button_image" src="./images/avatar.svg">
-                        <span>Logga in</span>
+                        <img class="header_button_image" src="./images/header/avatar.svg">
+                        <span class="header_text">Logga in</span>
                     </button>
                     <button class="header_buttons">
-                        <img class="header_button_image" src="./images/hamburger.svg">
-                        <span>Meny</span>
+                        <img class="header_button_image" src="./images/header/hamburger.svg">
+                        <span class="header_text">Meny</span>
                     </button>
                 </div>
             </div>
         </header>
+
         <main>
-            <div class="one_col"> 
-                <div class="side_and_big_box">
-                    <div class="inside_side_and_big_box">
-                        Text
+            <div id="inside_main">
+
+                <!-- <div class="one_column_wide_aside"> -->
+                <div class="item_inside_aside">
+                    <div class="inside_item_inside_aside">
+                        <h4>Coronaviruset – det här gäller</h4>
+                        <!-- <div id="inside_main_top_item"> -->
+                        <!--     <!-1- TODO: FIXA DETTA! -1-> -->
+                        <!--     <div id="inside_inside_main_top_image"> -->
+                        <!--         <img src="./images/main/main1.svg" class="inside_item_inside_aside_image"> -->
+                        <!--     </div> -->
+                        <!--     <div id="inside_inside_main_top_text"> -->
+                        <!--         <p class="inside_item_inside_aside_text"></p> -->
+                        <!--         <p class="inside_item_inside_aside_link">Här har vi samlat information om vad som gäller om ersättning för karens, smittbärarpenning, vab, ersättning för riskgrupper och andra ersättningar</p> -->
+                        <!--     </div> -->
+                        <!-- </div> -->
                     </div>
                 </div>
-                <div class="two_cols"> 
-                    <div class="small_box">
-                        <div class="inside_small_box1">
-                            <div class="inside_small_box">
-                                <h2 id="small_box_h2">Title1</h2>
-                                Text text text text text text
-                            </div>
-                        </div>
-                    </div>
-                    <div class="small_box">
-                        <div class="inside_small_box1">
-                            <div class="inside_small_box">
-                                <h2 id="small_box_h2">Title2</h2>
-                                Text text text text text text
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="two_cols"> 
-                    <div class="small_box">
-                        <div class="inside_small_box1">
-                            <div class="inside_small_box">
-                                <h2 id="small_box_h2">Title3</h2>
-                                Text text text text text text
-                            </div>
-                        </div>
-                    </div>
-                    <div class="small_box">
-                        <div class="inside_small_box1">
-                            <div class="inside_small_box">
-                                <h2 id="small_box_h2">Title4</h2>
-                                Text text text text text text
-                            </div>
+                <div class="two_column_wide_main_upper_lower">
+                     <div class="inside_two_column_wide_main_upper_lower">
+                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_foralder_border_color">
+                             <h2 class="main_two_column_h2" id="main_two_column_h2_foralder_background">Förälder</h2>
+                             <p class="inside_inside_two_column_wide_main_upper_lower_text">E-tjänster och information om föräldrapenning, vab, 10-dagar, graviditetspenning och andra ersättningar för dig som är eller ska bli förälder.</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="side_and_big_box"> -->
-                <!--     <div class="inside_side_and_big_box"> -->
-                <!--         WIDE_MAIN -->
-                <!--     </div> -->
-                <!-- </div> -->
+                <div class="two_column_wide_main_upper_lower">
+                     <div class="inside_two_column_wide_main_upper_lower">
+                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_sjuk_border_color">
+                            <h2 class="main_two_column_h2" id="main_two_column_h2_sjuk_background">Sjuk</h2>
+                            <p class="inside_inside_two_column_wide_main_upper_lower_text">E-tjänster och information om sjukpenning, arbetsskadeersättning och närståendepenning för dig som är sjuk eller vårdar en anhörig.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_wide_main_upper_lower">
+                     <div class="inside_two_column_wide_main_upper_lower">
+                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_arbetssokande_border_color">
+                            <h2 class="main_two_column_h2" id="main_two_column_h2_arbetssokande_background">Arbetssökande</h2>
+                            Text
+                            <!-- E-tjänster och information om föräldrapenning, vab, 10-dagar, graviditetspenning och andra ersättningar för dig som är eller ska bli förälder. -->
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_wide_main_upper_lower">
+                     <div class="inside_two_column_wide_main_upper_lower">
+                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_funktionsnedsattning_border_color">
+                            <h2 class="main_two_column_h2" id="main_two_column_h2_funktionsnedsattning_background">Funktionsnedsättning</h2>
+                            Text
+                            <!-- E-tjänster och information om föräldrapenning, vab, 10-dagar, graviditetspenning och andra ersättningar för dig som är eller ska bli förälder. -->
+                        </div>
+                    </div>
+                </div>
+                <div class="one_column_wide_main_middle_bottom">
+                    ONE
+                </div>
+                <div class="two_column_wide_main_upper_lower">
+                    <div class="inside_two_column_wide_main_upper_lower">
+                        <div class="inside_inside_two_column_wide_main_upper_lower" id="main_lower_border_color">
+                            TWO1
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_wide_main_upper_lower">
+                    <div class="inside_two_column_wide_main_upper_lower">
+                        <div class="inside_inside_two_column_wide_main_upper_lower" id="main_lower_border_color">
+                            TWO2
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_wide_main_upper_lower">
+                    <div class="inside_two_column_wide_main_upper_lower">
+                        <div class="inside_inside_two_column_wide_main_upper_lower" id="main_lower_border_color">
+                            TWO3
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_wide_main_upper_lower">
+                    <div class="inside_two_column_wide_main_upper_lower">
+                        <div class="inside_inside_two_column_wide_main_upper_lower" id="main_lower_border_color">
+                            TWO4
+                        </div>
+                    </div>
+                </div>
+                <div class="one_column_wide_main_middle_bottom">
+                    ONE
+                </div>
             </div>
 
-            <!-- <aside class="aside"> -->
             <aside>
-                <div id="aside_order_1" class="side_and_big_box">
-                    <div class="inside_side_and_big_box">
-                        ASIDE1
+                <div class="item_inside_aside">
+                    <div class="inside_item_inside_aside">
+                        <h4>Ersättningar som påverkas av coronapandemin</h4>
+                        <img src="./images/main/aside1.svg" class="inside_item_inside_aside_image">
+                        <p class="inside_item_inside_aside_text">Då kan du få två beslut om slutligt bostadsbidrag i år.</p>
+                        <p class="inside_item_inside_aside_link">Coronaviruset - statistik</p>
                     </div>
                 </div>
-                <div id="aside_order_2" class="side_and_big_box">
-                    <div class="inside_side_and_big_box">
-                        ASIDE2 
+                <div class="item_inside_aside">
+                    <div class="inside_item_inside_aside">
+                        <h4>Har du haft bostadsbidrag under både 2019 och 2020?</h4>
+                        <img src="./images/main/aside2.svg" class="inside_item_inside_aside_image">
+                        <p class="inside_item_inside_aside_text"></p>
+                        <p class="inside_item_inside_aside_link">Förändringar för dig som har bostadsbidrag</p>
                     </div>
                 </div>
-                <div id="aside_order_3" class="side_and_big_box">
-                    <div class="inside_side_and_big_box">
-                        ASIDE3 
+                <div class="item_inside_aside">
+                    <div class="inside_item_inside_aside" id="inside_item_inside_aside_blue_border">
+                        <h4>Har någon gjort dig illa?</h4>
+                        <img src="./images/main/aside3.svg" class="inside_item_inside_aside_image">
+                        <p class="inside_item_inside_aside_text"></p>
+                        <p class="inside_item_inside_aside_link">Du har rätt till ett liv fritt från våld</p>
                     </div>
                 </div>
-                <div id="aside_order_4" class="side_and_big_box">
-                    <div class="inside_side_and_big_box">
-                        ASIDE4 
+                <div class="item_inside_aside">
+                    <div class="inside_item_inside_aside">
+                        <h4>Missa inte ditt tandvårdsbidrag!</h4>
+                        <img src="./images/main/aside4.svg" class="inside_item_inside_aside_image">
+                        <p class="inside_item_inside_aside_text"></p>
+                        <p class="inside_item_inside_aside_link">Se hur mycket du får i bidrag</p>
                     </div>
                 </div>
-                <div id="aside_order_5" class="side_and_big_box">
-                    <div class="inside_side_and_big_box">
-                        ASIDE5 
+                <div class="item_inside_aside">
+                    <div class="inside_item_inside_aside">
+                        <h4>Do you want to talk to us in your language?</h4>
+                        <img src="./images/main/aside5.svg" class="inside_item_inside_aside_image">
+                        <p class="inside_item_inside_aside_text"></p>
+                        <p class="inside_item_inside_aside_link">Contact Försäkringskassan</p>
                     </div>
                 </div>
             </aside>
         </main>
+
+        <!-- <main> -->
+        <!--     <div class="one_col"> --> 
+        <!--         <div class="side_and_big_box"> -->
+        <!--             <div class="inside_side_and_big_box"> -->
+        <!--                 Text -->
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--         <div class="two_cols"> --> 
+        <!--             <div class="small_box"> -->
+        <!--                 <div class="inside_small_box1"> -->
+        <!--                     <div class="inside_small_box"> -->
+        <!--                         <h2 class="small_box_h2" id="small_box_foralder">Förälder</h2> -->
+        <!--                         E-tjänster och information om föräldrapenning, vab, 10-dagar, graviditetspenning och andra ersättningar för dig som är eller ska bli förälder. -->
+        <!--                     </div> -->
+        <!--                 </div> -->
+        <!--             </div> -->
+        <!--             <div class="small_box"> -->
+        <!--                 <div class="inside_small_box1"> -->
+        <!--                     <div class="inside_small_box"> -->
+        <!--                         <h2 class="small_box_h2" id="small_box_sjuk">Sjuk</h2> -->
+        <!--                         E-tjänster och information om sjukpenning, arbetsskadeersättning och närståendepenning för dig som är sjuk eller vårdar en anhörig. -->
+        <!--                     </div> -->
+        <!--                 </div> -->
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--         <div class="two_cols"> --> 
+        <!--             <div class="small_box"> -->
+        <!--                 <div class="inside_small_box1"> -->
+        <!--                     <div class="inside_small_box"> -->
+        <!--                         <h2 class="small_box_h2" id="small_box_arbetssokande">Arbetssökande</h2> -->
+        <!--                         E-tjänster och information om aktivitetsstöd, utvecklings- och etableringsersättning för dig som deltar i ett program hos Arbetsförmedlingen. -->
+        <!--                     </div> -->
+        <!--                 </div> -->
+        <!--             </div> -->
+        <!--             <div class="small_box"> -->
+        <!--                 <div class="inside_small_box1"> -->
+        <!--                     <div class="inside_small_box"> -->
+        <!--                         <h2 class="small_box_h2" id="small_box_funktionsnedsattning">Funktionsnedsättning</h2> -->
+        <!--                         E-tjänster och information om assistansersättning, omvårdnadsbidrag, merkostnadsersättning, sjukersättning, aktivitetsersättning och bilstöd. -->
+        <!--                     </div> -->
+        <!--                 </div> -->
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--         <!-1- <div class="side_and_big_box"> -1-> -->
+        <!--         <!-1-     <div class="inside_side_and_big_box"> -1-> -->
+        <!--         <!-1-         WIDE_MAIN -1-> -->
+        <!--         <!-1-     </div> -1-> -->
+        <!--         <!-1- </div> -1-> -->
+        <!--     </div> -->
+
+        <!--     <!-1- <aside class="aside"> -1-> -->
+        <!--     <aside> -->
+        <!--         <div id="aside_order_1" class="side_and_big_box"> -->
+        <!--             <div class="inside_side_and_big_box"> -->
+        <!--                 ASIDE1 -->
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--         <div id="aside_order_2" class="side_and_big_box"> -->
+        <!--             <div class="inside_side_and_big_box"> -->
+        <!--                 ASIDE2 --> 
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--         <div id="aside_order_3" class="side_and_big_box"> -->
+        <!--             <div class="inside_side_and_big_box"> -->
+        <!--                 ASIDE3 --> 
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--         <div id="aside_order_4" class="side_and_big_box"> -->
+        <!--             <div class="inside_side_and_big_box"> -->
+        <!--                 ASIDE4 --> 
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--         <div id="aside_order_5" class="side_and_big_box"> -->
+        <!--             <div class="inside_side_and_big_box"> -->
+        <!--                 ASIDE5 --> 
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--     </aside> -->
+        <!-- </main> -->
 
         <footer>
             <div id="inside_footer_container" class="padding_footer">
@@ -113,31 +248,39 @@
 
                     <div id="one_column_footer">
                         <div id="inside_one_column_footer">
-                            <h2 id="one_column_footer_h2">Title</h2>
-                            <span id="footer_span">Text text text text text text</span>
+                            <img src="./images/kundtjanst.svg" id="one_column_footer_image">
+                            <!-- <h2 id="one_column_footer_h2">Title</h2> -->
+                            <span id="one_column_footer_title_text" class="text_color_white">Kundcenter för privatperson</span>
+                            <span id="one_column_footer_telephone_number_text">0771-524 524</span>
+                            <p id="one_column_footer_text" class="text_color_white">Måndag-fredag: 8-16</p>
+                            <p id="one_column_footer_text" class="text_color_white">Lördag-söndag: stängt</p>
+                            <p id="one_column_footer_text" class="text_color_white">Helgdag: stängt</p>
                             <br>
-                            <a href="https://duckduckgo.com">Länk</a>
+                            <a href="https://duckduckgo.com" class="links_footer">Fler kontaktuppgifter</a>
                         </div>
                     </div>
 
                     <div id="two_column_footer_container">
                         <!-- <div class="inside_footer_col" style="background-color: peru"> -->
                         <div class="two_column_width" style="background-color: peru">
-                            <a href="https://duckduckgo.com">Länk</a>
+                            <a href="https://duckduckgo.com" class="links_footer">Om Försäkringskassan</a>
                             <br>
-                            <a href="https://duckduckgo.com">Länk</a>
+                            <a href="https://duckduckgo.com" class="links_footer">Press</a>
                             <br>
-                            <a href="https://duckduckgo.com">Länk</a>
+                            <a href="https://duckduckgo.com" class="links_footer">Om webbplatsen</a>
                             <br>
-                            <a href="https://duckduckgo.com">Länk</a>
+                            <a href="https://duckduckgo.com" class="links_footer">Utbetalningsdatum och handläggningstider</a>
                             <br>
-                            <a href="https://duckduckgo.com">Länk</a>
+                            <a href="https://duckduckgo.com" class="links_footer">Behandling av personuppgifter</a>
                             <hr>
-                            <a href="https://duckduckgo.com">Länk</a>
+                            <a href="https://duckduckgo.com" class="links_footer">Information in other languages</a>
                         </div>
 
-                        <div class="two_column_width" style="background-color: lightsalmon">
-                            Vår vision är ett samhälle där människor känner trygghet om livet tar en ny vändning.
+                        <div class="two_column_width" id="footer_visdomshord">
+                            <p class="text_color_white">
+                                Vår vision är ett samhälle där människor känner trygghet om livet tar en ny vändning.
+                            </p>
+                            <img src="./images/logo.svg">
                         </div>
                     </div>
                 </div>

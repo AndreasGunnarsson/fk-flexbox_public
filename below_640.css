@@ -68,6 +68,14 @@ main {
     /* justify-content: space-evenly; */
 }
 
+#inside_one_column_footer {
+    /* background-color: olive; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 100%; */
+    align-items: center;
+}
+
 #two_column_footer_container {
     /* background-color: plum; */
     /* display: flex; */
@@ -83,8 +91,8 @@ main {
 /* ------------------- SOCIAL FOOTER */
 
 .padding_footer {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #social_footer {
@@ -141,6 +149,8 @@ main {
     /* margin-left: 0; */
     margin: 0;
     width: 37%;
+
+    /* TODO: FIXA SÅ ATT WIDTH ÄR RÄTT HÄR. använd calc(). */
 
     /* display: flex; */
     /* align-items: center; */

@@ -42,7 +42,7 @@ header {
     /* flex-direction: column; */
     /* text-align: center; */
     /* width: 500px; */
-    background-color: red;
+    /* background-color: red; */
     /* white-space: nowrap; */
 }
 
@@ -79,7 +79,7 @@ input {
     margin: 11px 10px;
 }
 
-span {
+.header_text {
     color: white;
     font-size: 1rem;
     font-weight: 700;
@@ -92,146 +92,409 @@ span {
 /* ------------------------- MAIN */
 
 main {
-    /* margin: auto; */
-    /* margin-top: 32px; */
-    /* margin-bottom: 40px; */
+    margin: 32px auto 40px;
+    /* BUGGADE LOSS MED 16px (som används på orginal-sidan). */
+    /* padding: 8px 16px 4px; */
+    padding: 8px 0px 4px;
     display: flex;
     flex-direction: row;
-    margin: 32px auto 40px;
-    padding: 8px 10px 4px;
+    /* max-width: calc(1200px - 32px); */
     max-width: 1200px;
     background-color: purple;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* margin-top: 2rem; */
+    /* padding: 10px; */
 }
-
-/* main > * { */
-/*   flex: 1 100%; */
-/* } */
 
 aside {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    /* flex: 1 100%; */
-    background-color: purple;
+    flex-shrink: 2;
+    flex-grow: 2;
+    /* flex-basis: 0; */
+    /* flex-basis: 25%; */
+    padding-left: .75rem;
+    padding-right: .75rem; 
+    background-color: fuchsia;
+    min-width: 230px;
+    max-width: 274px;
 }
 
-#aside_order_1 {      
-    order: 1;      
-}      
-#aside_order_2 {      
-    order: 2;      
-}      
-#aside_order_3 {      
-    order: 3;      
-}                             
-#aside_order_4 {              
-    order: 4;                 
-}                             
-#aside_order_5 {              
-    order: 5;                                                    
-}
-
-.two_cols {
-    background-color: blue;
+#inside_main {
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* padding FUNKAR INTE MEN ANVÄNDS I ORGINALET. SE ÄVEN padding i MAIN. */
+    /* padding-left: 12px; */
+    /* padding-right: 12px; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    min-width: 738px;
+    /* ÄNDRAT max-width PGA PADDING. */
+    /* max-width: 870px; */
+    max-width: 894px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-color: gold;
+    /* flex-basis: 0; */
+    /* width: 100%; */
 }
 
-.one_col {
-    background-color: red;
+#inside_main_top_item {
+    background-color: azure;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%
+    margin-left: -.75rem;
+    margin-right: -.75rem;
 }
 
-/* Allt under är taget från faktiska hemsidan. */
-.side_and_big_box {
-    padding: 0 1rem 2rem;
-    /* margin: 0 0 1.5rem; */ 
-    /* margin: 1.5rem 1.5rem; */
-    background: #fff;
-    /* display: block; */
-    /* overflow: hidden; */
-    width: 400px;                       /* TEMP */
-    max-width: 300px;
-    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+#inside_inside_main_top_image {
+    width: 100px;
+    padding-left: .75rem;
+    padding-right: .75rem;
 }
 
-.inside_side_and_big_box {
-    background-color: beige;
-    border-top-style: solid;
-    border-top-color: #5f9e6c;
-    border-top-width: 0.5rem;
-    /* width: 90%; */
-    margin: auto;
-    /* height: 200px; */
+#inside_inside_main_top_text {
+    padding-left: .75rem;
+    padding-right: .75rem;
 }
 
-.side_and_big_box:hover {
-    box-shadow: 0 1px 5px rgba(0,0,0,.6);
-}
+/* .one_column_wide_aside { */
+/*     /1* flex-grow: 3; *1/ */
+/*     min-width: 100%; */
+/*     background-color: beige; */
+/* } */
 
-/* har också några element i sig som antagligen bestämmer height. */
-.small_box {
-    padding: 16px 0;
-    box-shadow: 0 1px 4px rgba(0,0,0,.3);
-/*    background-color: #fff; */
-    background-color: yellow;
-    margin: 0 0 1.5rem 0;
-    /* margin: 0 0 1.5rem; */
-    max-height: 144px;
-/*    height: 168px; */  /* plus 16px padding i top/bot, se nedan */
-    padding: 16px 12px;
-    width: 50%;
-}
-
-.inside_small_box1 {
-    background-color: navy;
-    height: 100px;
-}
-
-.inside_small_box {
-    /* padding: 5px; */
+.two_column_wide_main_upper_lower {
+    min-width: calc(50% - 1.5rem); 
+    /* min-width: 50%; */ 
+    /* width: 420px; */
+    /* flex-grow: 1; */
+    /* flex-basis: 0; */
     background-color: lightsalmon;
-    /* height: 12px; */
-    /* height: 80%; */
-    border-left-style: solid;
-    border-left-color: lightcyan;
-    position: relative;
-    top: 50%;
-    transform: translatey(-50%);
-    padding: 0 1rem;
+    /* PADDING FUNKAR INTE (används i orginalet) */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
-#small_box_h2 {
+.inside_two_column_wide_main_upper_lower {
+    /* max-width är viktigt att kolla i alla versioner (<1024, <640) */
+    max-width: 423px;
+    background-color: fuchsia;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+.inside_inside_two_column_wide_main_upper_lower {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #ffffff;
+    border-left-style: solid;
+    border-left-width: 2px;
+    /* TODO: LOWER HAR 2px PADDING I BOTTEN. */
+}
+
+#main_foralder_border_color {
+    border-color: #bf8a21;
+}
+
+#main_sjuk_border_color {
+    border-color: #4c669f;
+}
+
+#main_arbetssokande_border_color {
+    border-color: #d34503;
+}
+
+#main_funktionsnedsattning_border_color {
+    border-color: #a73a64;
+}
+
+#main_lower_border_color {
+    border-color: #5f9e6c;
+}
+
+.main_two_column_h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 
-    background-image: url("./images/small.png");
     background-size: 56px;
     background-repeat: no-repeat;
     background-position: left;
     height: 56px;
     padding-left: 76px;
+    margin-bottom: 1rem;
+    margin-top: 0;
     /* font-size: 1.75rem; */
 }
 
+.inside_inside_two_column_wide_main_upper_lower_text {
+    margin: 0;
+}
+
+#main_two_column_h2_foralder_background {
+    background-image: url("./images/main/foralder.svg");
+}
+
+#main_two_column_h2_sjuk_background {
+    background-image: url("./images/main/sjuk.svg");
+}
+
+#main_two_column_h2_arbetssokande_background {
+    background-image: url("./images/main/arbetssokande.svg");
+}
+
+#main_two_column_h2_funktionsnedsattning_background {
+    background-image: url("./images/main/funktionsnedsattning.svg");
+}
+
+.one_column_wide_main_middle_bottom {
+    /* flex-grow: 3; */
+    min-width: 100%;
+    background-color: beige;
+}
+
+/* ------------------------- ASIDE */
+.item_inside_aside {
+    min-width: 50%; 
+    flex-grow: 2;
+    /* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. */
+    /* background: #ffffff; */
+    /* padding: 0 1rem 2rem 1rem; */
+    background-color: aqua;
+    padding: 0 1rem 2rem;
+    /* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? */
+    margin: 0 0 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+.item_inside_aside:hover {
+    box-shadow: 0 1px 5px rgba(0,0,0,.6);
+}
+
+.inside_item_inside_aside {
+    background-color: lime;
+    border-top-color: #5f9e6c;
+    border-top-style: solid;
+    border-top-width: 6px;
+    padding-top: 1rem;
+}
+
+h4 {
+    color: #1b1e23;
+    font-weight: 900;
+    margin: 0 0 .5rem;
+    font-size: 1.25rem;
+}
+
+.inside_item_inside_aside_image {
+    padding-bottom: 0.5rem;
+}
+
+.inside_item_inside_aside_text {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+.inside_item_inside_aside_link {
+    color: #1b1e23;
+    border-color: #99a2a2;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.25rem; 
+    border-bottom: 2px solid #99a2a2;
+}
+
+.inside_item_inside_aside_link:hover {
+    color: #5f68e8;
+    border-color: #5f68e8;
+}
+
+#inside_item_inside_aside_blue_border {
+    border-top-color: #4c669f;
+}
+
+
+/* main { */
+/*     /1* margin: auto; *1/ */
+/*     /1* margin-top: 32px; *1/ */
+/*     /1* margin-bottom: 40px; *1/ */
+/*     display: flex; */
+/*     flex-direction: row; */
+/*     margin: 32px auto 40px; */
+/*     padding: 8px 10px 4px; */
+/*     max-width: 1200px; */
+/*     background-color: purple; */
+/* } */
+
+/* /1* main > * { *1/ */
+/* /1*   flex: 1 100%; *1/ */
+/* /1* } *1/ */
+
+/* aside { */
+/*     /1* width: 200px; *1/ */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     flex-wrap: nowrap; */
+/*     /1* flex: 1 100%; *1/ */
+/*     background-color: purple; */
+/* } */
+
+/* #aside_order_1 { */      
+/*     order: 1; */      
+/* } */      
+
+/* #aside_order_2 { */      
+/*     order: 2; */      
+/* } */      
+
+/* #aside_order_3 { */      
+/*     order: 3; */      
+/* } */                             
+
+/* #aside_order_4 { */              
+/*     order: 4; */                 
+/* } */                             
+
+/* #aside_order_5 { */              
+/*     order: 5; */                                                    
+/* } */
+
+/* .two_cols { */
+/*     background-color: blue; */
+/*     display: flex; */
+/*     flex-direction: row; */
+/*     justify-content: space-around; */
+/* } */
+
+/* .one_col { */
+/*     background-color: red; */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     width: 100% */
+/* } */
+
+/* /1* Allt under är taget från faktiska hemsidan. *1/ */
+/* .side_and_big_box { */
+/*     flex-basis: auto; */
+/*     flex-shrink: 3; */
+/*     flex-grow: 1; */
+/*     padding: 0 1rem 2rem; */
+/*     /1* margin: 0 0 1.5rem; *1/ */ 
+/*     /1* margin: 1.5rem 1.5rem; *1/ */
+/*     background: #fff; */
+/*     /1* display: block; *1/ */
+/*     /1* overflow: hidden; *1/ */
+/*     /1* width: 400px;                       /2* TEMP *2/ *1/ */
+/*     max-width: 300px; */
+/*     box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+/* } */
+
+/* .inside_side_and_big_box { */
+/*     background-color: beige; */
+/*     border-top-style: solid; */
+/*     border-top-color: #5f9e6c; */
+/*     border-top-width: 0.5rem; */
+/*     /1* width: 90%; *1/ */
+/*     margin: auto; */
+/*     /1* height: 200px; *1/ */
+/* } */
+
+/* .side_and_big_box:hover { */
+/*     box-shadow: 0 1px 5px rgba(0,0,0,.6); */
+/* } */
+
+/* /1* har också några element i sig som antagligen bestämmer height. *1/ */
+/* .small_box { */
+/*     padding: 16px 0; */
+/*     box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+/* /1*    background-color: #fff; *1/ */
+/*     background-color: yellow; */
+/*     margin: 0 0 1.5rem 0; */
+/*     /1* margin: 0 0 1.5rem; *1/ */
+/*     max-height: 144px; */
+/* /1*    height: 168px; *1/  /1* plus 16px padding i top/bot, se nedan *1/ */
+/*     padding: 16px 12px; */
+/*     width: 50%; */
+/* } */
+
+/* .inside_small_box1 { */
+/*     background-color: navy; */
+/*     height: 100px; */
+/* } */
+
+/* .inside_small_box { */
+/*     /1* padding: 5px; *1/ */
+/*     background-color: lightsalmon; */
+/*     /1* height: 12px; *1/ */
+/*     /1* height: 80%; *1/ */
+/*     border-left-style: solid; */
+/*     border-left-color: lightcyan; */
+/*     position: relative; */
+/*     top: 50%; */
+/*     transform: translatey(-50%); */
+/*     padding: 0 1rem; */
+/* } */
+
+/* .small_box_h2 { */
+/*     display: flex; */
+/*     flex-direction: row; */
+/*     flex-wrap: nowrap; */
+/*     align-items: center; */
+
+/*     /1* background-image: url("./images/small.png"); *1/ */
+/*     background-size: 56px; */
+/*     background-repeat: no-repeat; */
+/*     background-position: left; */
+/*     height: 56px; */
+/*     padding-left: 76px; */
+/*     /1* font-size: 1.75rem; *1/ */
+/* } */
+
+/* #small_box_foralder { */
+/*     background-image: url("./images/main/foralder.svg"); */
+/* } */
+
+/* #small_box_sjuk { */
+/*     background-image: url("./images/main/sjuk.svg"); */
+/* } */
+
+/* #small_box_arbetssokande { */
+/*     background-image: url("./images/main/arbetssokande.svg"); */
+/* } */
+
+/* #small_box_funktionsnedsattning { */
+/*     background-image: url("./images/main/funktionsnedsattning.svg"); */
+/* } */
+
 /* ------------------------- FOOTER */
+.links_footer {
+    color: #ffffff;
+    border-color: #ffffff;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.padding_footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.text_color_white {
+    color: #ffffff;
+}
+
 footer {
     width: 100%;
     background-color: #116a3e;
     border-top-style: solid;
     border-top-color: #0c4329;
     border-top-width: 0.5rem;
-}
-
-.padding_footer {
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 #inside_footer_container {
@@ -269,7 +532,7 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    background-image: url("./images/small.png");
+    background-image: url("./images/kundtjanst.svg");
     background-size: 62px;
     background-repeat: no-repeat;
     background-position: left;
@@ -291,8 +554,30 @@ footer {
     width: 50%;
 }
 
-#footer_span {
-    color: white;
+/* #footer_span { */
+/*     color: white; */
+/* } */
+
+#one_column_footer_image {
+    width: 62px;
+    height: 62px;
+}
+#one_column_footer_title_text {
+    font-weight: 900;
+}
+
+#one_column_footer_telephone_number_text {
+    font-size: 20px;
+    color: #ecdf8c;
+}
+
+#one_column_footer_text {
+    line-height: 1.5;
+}
+
+#footer_visdomshord {
+    background-image: url("./images/citationstecken_background.svg");
+    background-repeat: no-repeat;
 }
 
 
@@ -341,23 +626,23 @@ footer {
 }
 
 #social_facebook {
-    background-image: url("./images/20x20-facebook.png");
+    background-image: url("./images/social/20x20-facebook.png");
 }
 
 #social_instagram {
-    background-image: url("./images/20x20-instagram.png");
+    background-image: url("./images/social/20x20-instagram.png");
 }
 
 #social_twitter {
-    background-image: url("./images/20x20-twitter.png");
+    background-image: url("./images/social/20x20-twitter.png");
 }
 
 #social_linkedin {
-    background-image: url("./images/20x20-linkedin.png");
+    background-image: url("./images/social/20x20-linkedin.png");
 }
 
 #social_youtube {
-    background-image: url("./images/20x20-youtube.png");
+    background-image: url("./images/social/20x20-youtube.png");
 }
 
 .social_links {
