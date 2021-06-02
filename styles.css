@@ -8,17 +8,18 @@ body {
     margin: 0;
 }
 
+/* ------------------------- HEADER */
+
 /* ska alltid ha höjden 88px */
 header {
     background-color: #116a3e;
-    height: 70px;
+    height: 83px;
     width: 100%;
     border-bottom-style: solid;
-    border-bottom-color: red; 
-    border-bottom-width: .25rem;
+    border-bottom-color: #a6d0ab;
+    border-bottom-width: 4px;
     box-shadow: 0 -2px 0 0 #0c7340,-2px 0 0 0 #0c7340,2px 0 0 0 #0c7340,0 0 2px 0 rgba(0,0,0,.5);
 }
-
 
 #inside_header {
     margin: auto;
@@ -27,17 +28,26 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    align-items: end;
+    height: 70px;
+    /* align-items: center; */
+    /* height: 100%; */
 }
 
 #header_logo {
     /* width: 100%; */
-    padding-left: 10px;
+    margin-top: 22px;
+    margin-left: 16px;
+    margin-bottom: 6px;
+    /* padding-left: 10px; */
     height: 42px;
+    /* width: 100%; */
 }
 
 #header_buttons_container {
+    margin-top: 22px;
+    margin-right: 16px;
+    margin-bottom: 6px;
     display: flex;
     /* flex-direction: column; */
     /* text-align: center; */
@@ -69,14 +79,33 @@ input {
     /* background-position: left; */
 }
 
+#special_button_no_margin_right {
+    margin-right: 0; 
+}
+
 .header_buttons:hover {
     background-color: black;
 }
 
-.header_button_image {
+/* .header_button_image { */
+/* } */
+
+#header_button_image_search {
     width: 22px;
     height: 22px;
-    margin: 11px 10px;
+    margin: 11px 4px 11px 10px;
+}
+
+#header_button_image_avatar {
+    width: 18px;
+    height: 18px;
+    margin: 13px 8px 13px 14px;
+}
+
+#header_button_image_hamburger {
+    width: 19px;
+    height: 19px;
+    margin: 14px 8px 11px 14px;
 }
 
 .header_text {
@@ -138,15 +167,18 @@ aside {
     /* width: 100%; */
 }
 
+/* ------------------------- MAIN - TOP */
 #inside_main_top_item {
-    background-color: azure;
+    background-color: fuchsia;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-left: -.75rem;
-    margin-right: -.75rem;
+    flex-direction: row;
+    align-items: center;
+    /* margin-left: -.75rem; */
+    /* margin-right: -.75rem; */
 }
 
+/* TODO: TA BORT DESSA TVÅ UNDER? */
 #inside_inside_main_top_image {
     width: 100px;
     padding-left: .75rem;
@@ -164,9 +196,12 @@ aside {
 /*     background-color: beige; */
 /* } */
 
+/* ------------------------- MAIN - TWO COLUMN - BASE */
 .two_column_wide_main_upper_lower {
-    min-width: calc(50% - 1.5rem); 
-    /* min-width: 50%; */ 
+    /* flex-shrink: 1; */ 
+    flex-basis: calc(50% - 1.5rem);
+    /* flex-grow: 1; */
+    /* min-width: calc(50% - 1.5rem); */ 
     /* width: 420px; */
     /* flex-grow: 1; */
     /* flex-basis: 0; */
@@ -178,6 +213,8 @@ aside {
 
 .inside_two_column_wide_main_upper_lower {
     /* max-width är viktigt att kolla i alla versioner (<1024, <640) */
+    flex-shrink: 1;
+    min-width: 357px;
     max-width: 423px;
     background-color: fuchsia;
     padding-top: 1rem;
@@ -195,6 +232,7 @@ aside {
     /* TODO: LOWER HAR 2px PADDING I BOTTEN. */
 }
 
+/* ------------------------- MAIN - BORDER COLORS */
 #main_foralder_border_color {
     border-color: #bf8a21;
 }
@@ -211,10 +249,11 @@ aside {
     border-color: #a73a64;
 }
 
-#main_lower_border_color {
-    border-color: #5f9e6c;
+.main_lower_border_color {
+    border-left-color: #5f9e6c;
 }
 
+/* ------------------------- MAIN - UPPER TWO COLUMN WIDE */
 .main_two_column_h2 {
     display: flex;
     flex-direction: row;
@@ -251,10 +290,65 @@ aside {
     background-image: url("./images/main/funktionsnedsattning.svg");
 }
 
+/* ------------------------- MAIN - EN KOLUMN I MITTEN AV MAIN */
 .one_column_wide_main_middle_bottom {
+    display: flex;
+    flex-direction: row;
     /* flex-grow: 3; */
     min-width: 100%;
-    background-color: beige;
+    background-color: forestgreen;
+    margin-bottom: 1.5rem;
+}
+
+#inside_one_column_middle1 {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+#padding_and_border_right {
+    padding-right: 1.5rem;
+    border-right: 1px solid #ddd;
+}
+
+/* ------------------------- MAIN - ÖVERSTA 1 COLUM-BREDD! */
+#special_margin {
+    margin: 0 .75rem 1.5rem;
+}
+
+/* ------------------------- MAIN - NEDERSTA TWO COLUMN WIDE */
+.main_lower_links {
+    text-decoration: none;
+    color: #1b1e23;
+    border-bottom: 2px solid #99a2a2;
+    font-weight: 700;
+    /* margin-top: 4px; */
+    /* margin-bottom: 2px; */
+    padding-bottom: 0;
+    transition: all .15s ease-in-out;
+}
+
+.main_lower_links:hover {
+    padding-bottom: 2px;
+    color: #5f68e8;
+    border-bottom: 2px solid #5f68e8;
+}
+/* ^^TODO: KOLLA IFALL MAN KAN ANVÄNDA DESSA (links) I ASIDE OCKSÅ!^^ */
+
+.main_lower_h2 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.main_lower_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_lower_li {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
 }
 
 /* ------------------------- ASIDE */
@@ -263,7 +357,6 @@ aside {
     flex-grow: 2;
     /* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. */
     /* background: #ffffff; */
-    /* padding: 0 1rem 2rem 1rem; */
     background-color: aqua;
     padding: 0 1rem 2rem;
     /* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? */
