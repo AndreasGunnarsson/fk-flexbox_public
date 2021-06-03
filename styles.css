@@ -6,6 +6,13 @@ html {
 
 body {
     margin: 0;
+    /* overflow-x: hidden; /1* Hide horizontal scrollbar *1/ */
+    /* TODO: VET INTE OM OVERFLOW BEHÖVS.. */
+}
+
+/* TODO: ANVÄND MER AV DESSA? OOCSS. */
+.background_color_white {
+    background-color: #ffffff;
 }
 
 /* ------------------------- HEADER */
@@ -85,6 +92,7 @@ input {
 
 .header_buttons:hover {
     background-color: black;
+    /* TODO: ÄNDRA FÄRG! */
 }
 
 /* .header_button_image { */
@@ -123,8 +131,11 @@ input {
 main {
     margin: 32px auto 40px;
     /* BUGGADE LOSS MED 16px (som används på orginal-sidan). */
+    /* TROR ATT DE HAR EN TILL DIV SOM TAR -0.75 rem PÅ VARJE SIDA.
+     *KVAR BLIR därmed 16-12 = 4px.
     /* padding: 8px 16px 4px; */
-    padding: 8px 0px 4px;
+    padding: 8px 4px 4px;
+    /* padding: 8px 0px 4px; */
     display: flex;
     flex-direction: row;
     /* max-width: calc(1200px - 32px); */
@@ -148,21 +159,32 @@ aside {
     max-width: 274px;
 }
 
+/* .aside2 { */
+/*     flex-shrink: 2; */
+/*     flex-grow: 2; */
+/*     /1* flex-basis: 0; *1/ */
+/*     /1* flex-basis: 25%; *1/ */
+/*     padding-left: .75rem; */
+/*     padding-right: .75rem; */ 
+/*     background-color: fuchsia; */
+/*     min-width: 230px; */
+/*     max-width: 274px; */
+/* } */
+
 #inside_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     flex-shrink: 1;
     flex-grow: 1;
+    min-width: 738px;
+    max-width: 894px;
+    background-color: gold;
     /* padding FUNKAR INTE MEN ANVÄNDS I ORGINALET. SE ÄVEN padding i MAIN. */
     /* padding-left: 12px; */
     /* padding-right: 12px; */
-    display: flex;
-    flex-direction: row;
-    min-width: 738px;
     /* ÄNDRAT max-width PGA PADDING. */
     /* max-width: 870px; */
-    max-width: 894px;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    background-color: gold;
     /* flex-basis: 0; */
     /* width: 100%; */
 }
@@ -291,23 +313,73 @@ aside {
 }
 
 /* ------------------------- MAIN - EN KOLUMN I MITTEN AV MAIN */
-.one_column_wide_main_middle_bottom {
+.one_column_wide_main_middle {
     display: flex;
     flex-direction: row;
     /* flex-grow: 3; */
-    min-width: 100%;
+    /* min-width: 100%; */
     background-color: forestgreen;
     margin-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    max-width: calc(894px - 1.5rem);
 }
 
 #inside_one_column_middle1 {
+    background-color: firebrick;
+    /* max-width: 522px; */
+    max-width: 60%;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+}
+
+#inside_one_column_middle2 {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: dimgrey;
+}
+
+#inside_inside_one_column_middle2 {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    background-color: lime;
 }
 
 #padding_and_border_right {
     padding-right: 1.5rem;
     border-right: 1px solid #ddd;
+}
+
+#middle_h2 {
+    font-size: 1.75rem;
+    color: #1b1e23;
+    margin: .2rem 0 .5rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+h3 {
+    margin-top: 0.2rem;
+    margin-bottom: .5rem;
+    font-size: 1.375rem;
+    color: #1b1e23;
+    font-weight: 900;
+}
+
+#middle_ul {
+    list-style-type: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    /* padding: 0; */
+}
+
+.middle_li {
+    margin-bottom: 1rem;
+}
+
+.gray_text {
+    margin: 0;
+    color: #666;
 }
 
 /* ------------------------- MAIN - ÖVERSTA 1 COLUM-BREDD! */
@@ -321,6 +393,7 @@ aside {
     color: #1b1e23;
     border-bottom: 2px solid #99a2a2;
     font-weight: 700;
+    line-height: 1.5;
     /* margin-top: 4px; */
     /* margin-bottom: 2px; */
     padding-bottom: 0;
@@ -351,6 +424,36 @@ aside {
     padding-bottom: 2px;
 }
 
+/* ------------------------- MAIN - NEDERSTA ONE COLUMN */
+
+#main_bottom_one_column {
+    /* padding-top: 16px; */
+    /* padding-bottom: 16px; */
+    margin: 0 .75rem 1.5rem;
+    width: 100%;
+}
+
+.middle_and_bottom_p {
+    color: #1b1e23;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 1.25rem;
+}
+
+#inside_one_column_bottom {
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    background-color: firebrick;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 24px;
+}
+
+/* #inside_one_column_middle1 { */
+/*     padding-top: 1rem; */
+/*     padding-bottom: 1.5rem; */
+/* } */
+
 /* ------------------------- ASIDE */
 .item_inside_aside {
     min-width: 50%; 
@@ -379,7 +482,9 @@ aside {
 h4 {
     color: #1b1e23;
     font-weight: 900;
-    margin: 0 0 .5rem;
+    margin: .2rem 0 .5rem;
+    line-height: 1.4;
+    font-style: normal;
     font-size: 1.25rem;
 }
 
@@ -388,180 +493,31 @@ h4 {
 }
 
 .inside_item_inside_aside_text {
+    color: #1b1e23;
     margin-top: 0;
     margin-bottom: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
-.inside_item_inside_aside_link {
-    color: #1b1e23;
-    border-color: #99a2a2;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 1.25rem; 
-    border-bottom: 2px solid #99a2a2;
-}
 
-.inside_item_inside_aside_link:hover {
-    color: #5f68e8;
-    border-color: #5f68e8;
-}
+/* .inside_item_inside_aside_link { */
+/*     color: #1b1e23; */
+/*     border-color: #99a2a2; */
+/*     font-weight: 700; */
+/*     margin-top: 0; */
+/*     margin-bottom: 1.25rem; */ 
+/*     border-bottom: 2px solid #99a2a2; */
+/* } */
+
+/* .inside_item_inside_aside_link:hover { */
+/*     color: #5f68e8; */
+/*     border-color: #5f68e8; */
+/* } */
 
 #inside_item_inside_aside_blue_border {
     border-top-color: #4c669f;
 }
-
-
-/* main { */
-/*     /1* margin: auto; *1/ */
-/*     /1* margin-top: 32px; *1/ */
-/*     /1* margin-bottom: 40px; *1/ */
-/*     display: flex; */
-/*     flex-direction: row; */
-/*     margin: 32px auto 40px; */
-/*     padding: 8px 10px 4px; */
-/*     max-width: 1200px; */
-/*     background-color: purple; */
-/* } */
-
-/* /1* main > * { *1/ */
-/* /1*   flex: 1 100%; *1/ */
-/* /1* } *1/ */
-
-/* aside { */
-/*     /1* width: 200px; *1/ */
-/*     display: flex; */
-/*     flex-direction: column; */
-/*     flex-wrap: nowrap; */
-/*     /1* flex: 1 100%; *1/ */
-/*     background-color: purple; */
-/* } */
-
-/* #aside_order_1 { */      
-/*     order: 1; */      
-/* } */      
-
-/* #aside_order_2 { */      
-/*     order: 2; */      
-/* } */      
-
-/* #aside_order_3 { */      
-/*     order: 3; */      
-/* } */                             
-
-/* #aside_order_4 { */              
-/*     order: 4; */                 
-/* } */                             
-
-/* #aside_order_5 { */              
-/*     order: 5; */                                                    
-/* } */
-
-/* .two_cols { */
-/*     background-color: blue; */
-/*     display: flex; */
-/*     flex-direction: row; */
-/*     justify-content: space-around; */
-/* } */
-
-/* .one_col { */
-/*     background-color: red; */
-/*     display: flex; */
-/*     flex-direction: column; */
-/*     width: 100% */
-/* } */
-
-/* /1* Allt under är taget från faktiska hemsidan. *1/ */
-/* .side_and_big_box { */
-/*     flex-basis: auto; */
-/*     flex-shrink: 3; */
-/*     flex-grow: 1; */
-/*     padding: 0 1rem 2rem; */
-/*     /1* margin: 0 0 1.5rem; *1/ */ 
-/*     /1* margin: 1.5rem 1.5rem; *1/ */
-/*     background: #fff; */
-/*     /1* display: block; *1/ */
-/*     /1* overflow: hidden; *1/ */
-/*     /1* width: 400px;                       /2* TEMP *2/ *1/ */
-/*     max-width: 300px; */
-/*     box-shadow: 0 1px 4px rgba(0,0,0,.3); */
-/* } */
-
-/* .inside_side_and_big_box { */
-/*     background-color: beige; */
-/*     border-top-style: solid; */
-/*     border-top-color: #5f9e6c; */
-/*     border-top-width: 0.5rem; */
-/*     /1* width: 90%; *1/ */
-/*     margin: auto; */
-/*     /1* height: 200px; *1/ */
-/* } */
-
-/* .side_and_big_box:hover { */
-/*     box-shadow: 0 1px 5px rgba(0,0,0,.6); */
-/* } */
-
-/* /1* har också några element i sig som antagligen bestämmer height. *1/ */
-/* .small_box { */
-/*     padding: 16px 0; */
-/*     box-shadow: 0 1px 4px rgba(0,0,0,.3); */
-/* /1*    background-color: #fff; *1/ */
-/*     background-color: yellow; */
-/*     margin: 0 0 1.5rem 0; */
-/*     /1* margin: 0 0 1.5rem; *1/ */
-/*     max-height: 144px; */
-/* /1*    height: 168px; *1/  /1* plus 16px padding i top/bot, se nedan *1/ */
-/*     padding: 16px 12px; */
-/*     width: 50%; */
-/* } */
-
-/* .inside_small_box1 { */
-/*     background-color: navy; */
-/*     height: 100px; */
-/* } */
-
-/* .inside_small_box { */
-/*     /1* padding: 5px; *1/ */
-/*     background-color: lightsalmon; */
-/*     /1* height: 12px; *1/ */
-/*     /1* height: 80%; *1/ */
-/*     border-left-style: solid; */
-/*     border-left-color: lightcyan; */
-/*     position: relative; */
-/*     top: 50%; */
-/*     transform: translatey(-50%); */
-/*     padding: 0 1rem; */
-/* } */
-
-/* .small_box_h2 { */
-/*     display: flex; */
-/*     flex-direction: row; */
-/*     flex-wrap: nowrap; */
-/*     align-items: center; */
-
-/*     /1* background-image: url("./images/small.png"); *1/ */
-/*     background-size: 56px; */
-/*     background-repeat: no-repeat; */
-/*     background-position: left; */
-/*     height: 56px; */
-/*     padding-left: 76px; */
-/*     /1* font-size: 1.75rem; *1/ */
-/* } */
-
-/* #small_box_foralder { */
-/*     background-image: url("./images/main/foralder.svg"); */
-/* } */
-
-/* #small_box_sjuk { */
-/*     background-image: url("./images/main/sjuk.svg"); */
-/* } */
-
-/* #small_box_arbetssokande { */
-/*     background-image: url("./images/main/arbetssokande.svg"); */
-/* } */
-
-/* #small_box_funktionsnedsattning { */
-/*     background-image: url("./images/main/funktionsnedsattning.svg"); */
-/* } */
 
 /* ------------------------- FOOTER */
 .links_footer {

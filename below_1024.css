@@ -1,33 +1,119 @@
 main    {
     flex-direction: column;
-    /* flex: 3 0px; */
+}
+
+#inside_main {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+    /* width: 100%; */
+    /* min-width: 738px; */
+    max-width: 100%;
+    background-color: orange;
 }
 
 aside {
-    /* width: 200px; */
-    /* display: flex; */
-    /* flex: 1 100%; */
+    /* width: 100%; */
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-between;
     background-color: dodgerblue;
+    max-width: 100%;
+}
+.one_column_wide_main_middle {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-grow: 3; */
+    /* min-width: 100%; */
+    /* background-color: forestgreen; */
+    /* margin-bottom: 1.5rem; */
+    /* padding-left: 0.75rem; */
+    /* padding-right: 0.75rem; */
+    max-width: 100%; 
 }
 
-#aside_order_1 {
+#inside_one_column_middle1 {
+    background-color: firebrick;
+    /* max-width: 60%; */
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+/* VI VILL HA 24px (1.5rem) emellan */
+.item_inside_aside {
+    flex-basis: calc(50% - 3.5rem);
+    /* max-width: 430px; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 400px; */
+    /* width: 40%; */
+    /* flex-basis: 10%; */
+    /* flex-shrink: 1; */
+    min-width: 0; 
+    /* flex-grow: 2; */
+    /* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. */
+    /* background: #ffffff; */
+    background-color: aqua;
+    /* padding: 0 1rem 2rem; */
+    /* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? */
+    /* margin: 0 0 1.5rem; */
+    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+}
+.inside_two_column_wide_main_upper_lower {
+    /* max-width är viktigt att kolla i alla versioner (<1024, <640) */
+    /* flex-shrink: 1; */
+    /* min-width: 357px; */
+    max-width: 100%;
+    background-color: violet;
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem; */
+    /* margin-bottom: 1.5rem; */
+    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+}
+
+#special_aside1 {
+    margin-right: .75rem;
     order: 1;
 }
-#aside_order_2 {
+
+#special_aside2 {
+    margin-right: .75rem;
     order: 3;
 }
-#aside_order_3 {
+
+#special_aside3 {
+    /* align-self: flex-start; */
+    /* flex-basis: calc(50% - 3.5rem); */
+    max-width: calc(50% - 2.75rem);
     order: 5;
 }
-#aside_order_4 {
+
+#special_aside4 {
+    margin-left: .75rem;
     order: 2;
 }
-#aside_order_5 {
+
+#special_aside5 {
+    margin-left: .75rem;
     order: 4;
 }
+/* #aside_order_1 { */
+/*     order: 1; */
+/* } */
+/* #aside_order_2 { */
+/*     order: 3; */
+/* } */
+/* #aside_order_3 { */
+/*     order: 5; */
+/* } */
+/* #aside_order_4 { */
+/*     order: 2; */
+/* } */
+/* #aside_order_5 { */
+/*     order: 4; */
+/* } */
 /* ---------------- FOOTER */
 
 #items_container {
