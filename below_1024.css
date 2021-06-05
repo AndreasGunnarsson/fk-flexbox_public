@@ -6,6 +6,18 @@ input {
     width: 175px;
 }
 
+#header_logo {
+    /* TODO: ÄNDRAR STORLEK UNDER 1024 pixlar. */
+    /* width: 100%; */
+    /* margin-top: 22px; */
+    /* margin-left: 16px; */
+    /* margin-bottom: 6px; */
+    /* padding-left: 10px; */
+    height: 42px;
+    width: 298px;
+    /* width: 100%; */
+}
+
 #inside_main {
     /* display: flex; */
     /* flex-direction: row; */
@@ -13,7 +25,7 @@ input {
     /* flex-shrink: 1; */
     /* flex-grow: 1; */
     /* width: 100%; */
-    /* min-width: 738px; */
+    min-width: 0;
     max-width: 100%;
     background-color: orange;
 }
@@ -69,13 +81,21 @@ aside {
 .inside_two_column_wide_main_upper_lower {
     /* max-width är viktigt att kolla i alla versioner (<1024, <640) */
     /* flex-shrink: 1; */
-    /* min-width: 357px; */
+    min-width: 0;
     max-width: 100%;
     background-color: violet;
     /* padding-top: 1rem; */
     /* padding-bottom: 1rem; */
     /* margin-bottom: 1.5rem; */
     /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+}
+
+/* MÅSTE FIXA I DENNA ISTÄLLET FÖR I item_inside_aside då den används både för top och aside. */
+#special_margin {
+    /* margin: 0 .75rem 1.5rem; */
+    flex-basis: 0;
+    min-width: 90%;
+    /* max-width: 100%; */
 }
 
 #special_aside1 {

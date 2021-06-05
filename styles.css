@@ -49,6 +49,7 @@ header {
     margin-bottom: 6px;
     /* padding-left: 10px; */
     height: 42px;
+    width: 313px;
     /* width: 100%; */
 }
 
@@ -204,28 +205,45 @@ aside {
     width: 100%;
     display: flex;
     flex-direction: row;
+    /* justify-content: center; */
     align-items: center;
     /* margin-left: -.75rem; */
     /* margin-right: -.75rem; */
 }
 
-/* TODO: TA BORT DESSA TVÅ UNDER? */
-#inside_inside_main_top_image {
-    width: 100px;
-    padding-left: .75rem;
-    padding-right: .75rem;
+#main_top_special_link {
+    width: 50%;
 }
 
-#inside_inside_main_top_text {
-    padding-left: .75rem;
+#main_top_special_image {
+    width: 50%;
     padding-right: .75rem;
+    padding-left: .75rem;
 }
+
+/* TODO: TA BORT DESSA TVÅ UNDER? */
+/* #inside_inside_main_top_image { */
+/*     width: 100px; */
+/*     padding-left: .75rem; */
+/*     padding-right: .75rem; */
+/* } */
+
+/* #inside_inside_main_top_text { */
+/*     padding-left: .75rem; */
+/*     padding-right: .75rem; */
+/* } */
 
 /* .one_column_wide_aside { */
 /*     /1* flex-grow: 3; *1/ */
 /*     min-width: 100%; */
 /*     background-color: beige; */
 /* } */
+
+#special_margin {
+    margin: 0 .75rem 1.5rem;
+}
+
+
 
 /* ------------------------- MAIN - TWO COLUMN - BASE */
 .two_column_wide_main_upper_lower {
@@ -298,8 +316,38 @@ aside {
     padding-left: 76px;
     margin-bottom: 1rem;
     margin-top: 0;
+    font-size: 1.75rem;
+    font-weight: 900;
+    /* overflow-wrap: break-word; */
+    /* word-wrap: break-word; */
     /* font-size: 1.75rem; */
 }
+
+
+/* .special2_styling_links { */
+/*     font-size: 1.75rem; */
+/*     font-weight: 900; */
+/*     /1* transition: padding .2s ease-in-out; *1/ */
+/* } */
+
+/* { */
+/*     text-decoration: none; */
+/*     color: #1b1e23; */
+/*     border-bottom: 2px solid #99a2a2; */
+/*     font-weight: 700; */
+/*     line-height: 1.5; */
+/*     /1* margin-top: 4px; *1/ */
+/*     /1* margin-bottom: 2px; *1/ */
+/*     padding-bottom: 0; */
+/*     transition: padding .15s ease-in-out; */
+/*     /1* NOTOS ÄNDRAT FRÅN all till padding! *1/ */
+/* } */
+
+/* .main_lower_links:hover { */
+/*     padding-bottom: 2px; */
+/*     color: #5f68e8; */
+/*     border-bottom: 2px solid #5f68e8; */
+/* } */
 
 .inside_inside_two_column_wide_main_upper_lower_text {
     margin: 0;
@@ -391,22 +439,20 @@ h3 {
     color: #666;
 }
 
-/* ------------------------- MAIN - ÖVERSTA 1 COLUM-BREDD! */
-#special_margin {
-    margin: 0 .75rem 1.5rem;
-}
 
 /* ------------------------- MAIN - NEDERSTA TWO COLUMN WIDE */
 .main_lower_links {
     text-decoration: none;
     color: #1b1e23;
     border-bottom: 2px solid #99a2a2;
-    font-weight: 700;
     line-height: 1.5;
     /* margin-top: 4px; */
     /* margin-bottom: 2px; */
     padding-bottom: 0;
-    transition: all .15s ease-in-out;
+    /* NOTOS ÄNDRAT FRÅN all till padding! */
+    font-size: 1rem;
+    font-weight: 700;
+    transition: padding .15s ease-in-out;
 }
 
 .main_lower_links:hover {
@@ -415,6 +461,10 @@ h3 {
     border-bottom: 2px solid #5f68e8;
 }
 /* ^^TODO: KOLLA IFALL MAN KAN ANVÄNDA DESSA (links) I ASIDE OCKSÅ!^^ */
+
+/* .special1_styling_links { */
+/* } */
+
 
 .main_lower_h2 {
     font-size: 1.375rem;
@@ -442,7 +492,8 @@ h3 {
 #main_bottom_one_column {
     /* padding-top: 16px; */
     /* padding-bottom: 16px; */
-    margin: 0 .75rem 1.5rem;
+    /* margin: 0 .75rem 1.5rem; */
+    margin: 0 .75rem;
     width: 100%;
 }
 
@@ -495,11 +546,19 @@ h3 {
 h4 {
     color: #1b1e23;
     font-weight: 900;
-    margin: .2rem 0 .5rem;
     line-height: 1.4;
     font-style: normal;
     font-size: 1.25rem;
+    /* margin: .2rem 0 .5rem; */
+    margin: 0 0 .5rem;
 }
+
+/* #h4_top { */
+/*     /1* margin: 0; *1/ */ 
+/* } */
+
+/* .h4_aside { */
+/* } */
 
 .inside_item_inside_aside_image {
     padding-bottom: 0.5rem;

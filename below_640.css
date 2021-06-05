@@ -69,9 +69,81 @@ main {
     /* background-position: left; */
     height: 40px;
     padding-left: 48px;
+    font-size: 1.3rem;
     /* margin-bottom: 1rem; */
     /* margin-top: 0; */
     /* font-size: 1.75rem; */
+}
+/* ---------------------- TOP MAIN */
+/* .item_inside_aside { */
+/*     min-width: 50%; */ 
+    /* width: calc(100%-3.75rem); */
+    /* width: 95%; */
+    /* flex-grow: 2; */
+    /* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. */
+    /* background: #ffffff; */
+    /* background-color: aqua; */
+    /* padding: 0 1rem 2rem; */
+    /* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? */
+    /* margin: 0 0 1.5rem; */
+    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+/* } */
+
+#special_margin {
+    margin: 0 0 1.5rem;
+}
+
+#inside_main_top_item {
+    background-color: fuchsia;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-left: -.75rem; */
+    /* margin-right: -.75rem; */
+}
+
+#main_top_special_link {
+    order: 2;
+    width: 100%;
+}
+
+#main_top_special_image {
+    order: 1;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+
+h4 {
+    /* color: #1b1e23; */
+    /* font-weight: 900; */
+    /* margin: .2rem 0 .5rem; */
+    /* line-height: 1.4; */
+    /* font-style: normal; */
+    /* font-size: 1.25rem; */
+    font-size: 1rem;
+}
+
+/* ---------------------- TOP MAIN END */
+
+
+#main_bottom_one_column {
+    /* padding-top: 16px; */
+    /* padding-bottom: 16px; */
+    /* margin: 0 .75rem 1.5rem; */
+    /* margin: 0 0 1.5rem; */
+    margin: 0;
+    width: 100%;
+}
+
+#inside_one_column_bottom {
+    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+    /* background-color: green; */
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem; */
+    /* margin-bottom: 24px; */
 }
 
 .main_lower_h2 {
@@ -84,7 +156,6 @@ main {
     /* margin-bottom: 0.5rem; */
 }
 
-/* TODO: FIXA DENNA (nedan)! */
 .one_column_wide_main_middle {
     /* display: flex; */
     flex-direction: column;
@@ -92,9 +163,52 @@ main {
     /* min-width: 100%; */
     /* background-color: forestgreen; */
     /* margin-bottom: 1.5rem; */
-    /* padding-left: 0.75rem; */
-    /* padding-right: 0.75rem; */
+    padding-left: 0;
+    padding-right: 0;
     /* max-width: calc(894px - 1.5rem); */
+}
+
+#inside_one_column_middle1 {
+    /* background-color: firebrick; */
+    /* max-width: 522px; */
+    max-width: 100%;
+    /* padding-top: 1rem; */
+    padding-bottom: 0;
+    /* padding-right: 1rem; */
+}
+
+#inside_one_column_middle2 {
+    border-left-color: #5f9e6c;
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding: 1rem;
+    /* padding-top: 2rem; */
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1.5rem; */
+    /* background-color: dimgrey; */
+}
+
+#inside_inside_one_column_middle2 {
+    /* TODO: MÅSTE FIXA DENNA. KAN BEHÖVA EN NY DIV. */
+    /* TODO: BÅDE DENNA OCH middle1 ska ha en border till vänster som hänger ihop. */
+    border-top: 1px solid #ddd;
+    padding-top: 2rem;
+    /* padding-left: 1.5rem; */
+    /* padding-right: 1rem; */
+    /* background-color: lime; */
+}
+
+#padding_and_border_right {
+    padding-right: 1rem;
+    /* border-right: 1px solid #ddd; */
+}
+
+#middle_h2 {
+    font-size: 1.3rem;
+    /* color: #1b1e23; */
+    /* margin: .2rem 0 .5rem; */
+    /* font-weight: 900; */
+    /* line-height: 1.4; */
 }
 
 aside {
