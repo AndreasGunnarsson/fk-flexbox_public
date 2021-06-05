@@ -2,6 +2,10 @@ main    {
     flex-direction: column;
 }
 
+input {
+    width: 175px;
+}
+
 #inside_main {
     /* display: flex; */
     /* flex-direction: row; */
@@ -23,6 +27,7 @@ aside {
     background-color: dodgerblue;
     max-width: 100%;
 }
+
 .one_column_wide_main_middle {
     /* display: flex; */
     /* flex-direction: row; */

@@ -15,6 +15,7 @@ header {
 }
 
 #inside_header {
+    /* TODO: DENNA BORDE HA EN BOX-SHADOW. */
     /* margin: auto; */
     /* max-width: 1200px; */
     width: 100%;
@@ -25,7 +26,7 @@ header {
     /* justify-content: space-between; */
     align-items: flex-start;
     height: 56px;
-    box-shadow: 0 16px teal;
+    /* box-shadow: 0 16px teal; */
     /* align-items: center; */
     /* height: 100%; */
 }
@@ -90,6 +91,11 @@ header {
     /* background-position: left; */
 }
 
+
+.header_buttons:hover {
+    background-color: #0e5532;
+    /* background-color: #34805b; */
+}
 input {
     display: none;
 }

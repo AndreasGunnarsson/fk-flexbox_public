@@ -1,63 +1,225 @@
-header {
-    background-color: darkgray;
-}
-
 main {
-    /* margin: auto; */
-    /* margin-top: 32px; */
-    /* margin-bottom: 40px; */
-    display: flex;
-    flex-direction: column;
-    margin: 32px auto 40px;
-    padding: 8px 10px 4px;
-    max-width: 1200px;
-    background-color: brown;
-}
-
-.two_cols {
-    background-color: firebrick;
+    /* margin: 32px auto 40px; */
+    /* BUGGADE LOSS MED 16px (som används på orginal-sidan). */
+    /* TROR ATT DE HAR EN TILL DIV SOM TAR -0.75 rem PÅ VARJE SIDA.
+     *KVAR BLIR därmed 16-12 = 4px.
+    /* padding: 8px 16px 4px; */
+    /* padding: 8px 4px 4px; */
+    /* padding: 8px 0px 4px; */
     /* display: flex; */
     flex-direction: column;
-    justify-content: space-around;
+    /* max-width: calc(1200px - 32px); */
+    /* max-width: 1200px; */
+    /* background-color: purple; */
+    /* justify-content: center; */
+    /* flex-wrap: nowrap; */
+    /* margin-top: 2rem; */
+    /* padding: 10px; */
 }
 
-/* .one_col { */
-/*     background-color: darkgreen; */
-/*     display: flex; */
-/*     flex-direction: column; */
-/*     width: 100% */
-/* } */
+#inside_main {
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+    min-width: 100%;
+    /* max-width: 894px; */
+    /* background-color: gold; */
+    /* padding: 0; */
+}
+ 
+.two_column_wide_main_upper_lower {
+    /* flex-shrink: 1; */ 
+    /* flex-basis: calc(50% - 1.5rem); */
+    /* width: 100%; */
+    flex-basis: 0;
+    /* width: 100%; */
+    /* flex-grow: 1; */
+    /* min-width: calc(50% - 1.5rem); */ 
+    /* width: 420px; */
+    /* flex-grow: 1; */
+    /* flex-basis: 0; */
+    /* background-color: lightsalmon; */
+    /* PADDING FUNKAR INTE (används i orginalet) */
+    padding-left: 0;
+    padding-right: 0;
+}
 
-/* main    { */
-/*     flex-direction: column; */
-/*     /1* flex: 3 0px; *1/ */
-/* } */
+.inside_two_column_wide_main_upper_lower {
+    /* max-width är viktigt att kolla i alla versioner (<1024, <640) */
+    /* flex-shrink: 1; */
+    min-width: 100%;
+    max-width: 0;
+    /* background-color: fuchsia; */
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem; */
+    /* margin-bottom: 1.5rem; */
+    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+}
 
-/* aside { */
-/*     /1* width: 200px; *1/ */
-/*     /1* display: flex; *1/ */
-/*     /1* flex: 1 100%; *1/ */
-/*     flex-direction: column; */
-/*     flex-wrap: nowrap; */
-/*     width: 100%; */
-/*     background-color: forestgreen; */
-/* } */
+.main_two_column_h2 {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* align-items: center; */
 
-#aside_order_1 {
+    background-size: 40px;
+    /* background-repeat: no-repeat; */
+    /* background-position: left; */
+    height: 40px;
+    padding-left: 48px;
+    /* margin-bottom: 1rem; */
+    /* margin-top: 0; */
+    /* font-size: 1.75rem; */
+}
+
+.main_lower_h2 {
+    font-size: 1.125rem;
+    /* font-size: 1.375rem; */
+    /* line-height: 1.4; */
+    /* color: #1b1e23; */
+    /* font-weight: 900; */
+    /* margin-top: 0.2rem; */
+    /* margin-bottom: 0.5rem; */
+}
+
+/* TODO: FIXA DENNA (nedan)! */
+.one_column_wide_main_middle {
+    /* display: flex; */
+    flex-direction: column;
+    /* flex-grow: 3; */
+    /* min-width: 100%; */
+    /* background-color: forestgreen; */
+    /* margin-bottom: 1.5rem; */
+    /* padding-left: 0.75rem; */
+    /* padding-right: 0.75rem; */
+    /* max-width: calc(894px - 1.5rem); */
+}
+
+aside {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0;
+    /* flex-shrink: 2; */
+    /* flex-grow: 2; */
+    /* /1* flex-basis: 0; *1/ */
+    /* /1* flex-basis: 25%; *1/ */
+    /* padding-left: .75rem; */
+    /* padding-right: .75rem; */ 
+    /* background-color: fuchsia; */
+    /* min-width: 230px; */
+    /* max-width: 274px; */
+}
+
+/* .item_inside_aside { */
+/*     /1* min-width: 50%; *1/ */ 
+/*     /1* flex-grow: 2; *1/ */
+/*     /1* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. *1/ */
+/*     /1* background: #ffffff; *1/ */
+/*     /1* background-color: aqua; *1/ */
+/*     padding: 0 1rem 2rem; */
+/*     /1* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? *1/ */
+/*     margin: 0 0 1.5rem; */
+/*     box-shadow: 0 1px 4px rgba(0,0,0,.3); */
+/* } */
+#special_aside1 {
+    margin-right: 0;
     order: 1;
 }
-#aside_order_2 {
+
+#special_aside2 {
+    margin-right: 0;
     order: 2;
 }
-#aside_order_3 {
+
+#special_aside3 {
+    /* align-self: flex-start; */
+    /* flex-basis: calc(50% - 3.5rem); */
+    max-width: 100%;
     order: 3;
 }
-#aside_order_4 {
+
+#special_aside4 {
+    margin-left: 0;
     order: 4;
 }
-#aside_order_5 {
+
+#special_aside5 {
+    margin-left: 0;
     order: 5;
 }
+/* .inside_inside_two_column_wide_main_upper_lower { */
+/*     padding-left: 1rem; */
+/*     padding-right: 1rem; */
+/*     background-color: #ffffff; */
+/*     border-left-style: solid; */
+/*     border-left-width: 2px; */
+/*     /1* TODO: LOWER HAR 2px PADDING I BOTTEN. *1/ */
+/* } */
+
+/* ----------------------------------------- OLD BELOW */
+/* /1* header { *1/ */
+/* /1*     background-color: darkgray; *1/ */
+/* /1* } *1/ */
+
+/* main { */
+/*     /1* margin: auto; *1/ */
+/*     /1* margin-top: 32px; *1/ */
+/*     /1* margin-bottom: 40px; *1/ */
+/*     display: flex; */
+/*     /1* flex-direction: column; *1/ */
+/*     margin: 32px auto 40px; */
+/*     padding: 8px 10px 4px; */
+/*     max-width: 1200px; */
+/*     background-color: brown; */
+/* } */
+
+/* .two_cols { */
+/*     background-color: firebrick; */
+/*     /1* display: flex; *1/ */
+/*     flex-direction: column; */
+/*     justify-content: space-around; */
+/* } */
+
+/* /1* .one_col { *1/ */
+/* /1*     background-color: darkgreen; *1/ */
+/* /1*     display: flex; *1/ */
+/* /1*     flex-direction: column; *1/ */
+/* /1*     width: 100% *1/ */
+/* /1* } *1/ */
+
+/* /1* main    { *1/ */
+/* /1*     flex-direction: column; *1/ */
+/* /1*     /2* flex: 3 0px; *2/ *1/ */
+/* /1* } *1/ */
+
+/* /1* aside { *1/ */
+/* /1*     /2* width: 200px; *2/ *1/ */
+/* /1*     /2* display: flex; *2/ *1/ */
+/* /1*     /2* flex: 1 100%; *2/ *1/ */
+/* /1*     flex-direction: column; *1/ */
+/* /1*     flex-wrap: nowrap; *1/ */
+/* /1*     width: 100%; *1/ */
+/* /1*     background-color: forestgreen; *1/ */
+/* /1* } *1/ */
+
+/* #aside_order_1 { */
+/*     order: 1; */
+/* } */
+/* #aside_order_2 { */
+/*     order: 2; */
+/* } */
+/* #aside_order_3 { */
+/*     order: 3; */
+/* } */
+/* #aside_order_4 { */
+/*     order: 4; */
+/* } */
+/* #aside_order_5 { */
+/*     order: 5; */
+/* } */
 
 /* ------------------- FOOTER */
 

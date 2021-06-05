@@ -42,6 +42,7 @@ header {
 }
 
 #header_logo {
+    /* TODO: ÄNDRAR STORLEK UNDER 1024 pixlar. */
     /* width: 100%; */
     margin-top: 22px;
     margin-left: 16px;
@@ -64,8 +65,17 @@ header {
 }
 
 input {
+    /* TODO: ALLA KNAPPAR/LÄNKAR HAR SPECIAL-BORDER NÄR MAN MARKERAT DEM. */
+    /* TODO: VERKAR VARA 200px bred ibland.. */
     width: 200px;
-    border-radius: 0;
+    /* border-radius: 0; */
+    color: rgba(0,0,0,.4);
+    /* width: 175px; */
+    height: 44px;
+    border-radius: 2px;
+    border: 2px solid #8c8c8c;
+    font-size: .875rem;
+    padding: .5rem;
 }
 
 .header_buttons {
@@ -91,8 +101,7 @@ input {
 }
 
 .header_buttons:hover {
-    background-color: black;
-    /* TODO: ÄNDRA FÄRG! */
+    background-color: #34805b;
 }
 
 /* .header_button_image { */
@@ -408,6 +417,10 @@ h3 {
 /* ^^TODO: KOLLA IFALL MAN KAN ANVÄNDA DESSA (links) I ASIDE OCKSÅ!^^ */
 
 .main_lower_h2 {
+    font-size: 1.375rem;
+    line-height: 1.4;
+    color: #1b1e23;
+    font-weight: 900;
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
 }
@@ -519,7 +532,7 @@ h4 {
     border-top-color: #4c669f;
 }
 
-/* ------------------------- FOOTER */
+/* ------------------------- FOOTER - BASE */
 .links_footer {
     color: #ffffff;
     border-color: #ffffff;
@@ -538,6 +551,7 @@ h4 {
     color: #ffffff;
 }
 
+/* ------------------------- FOOTER */
 footer {
     width: 100%;
     background-color: #116a3e;
@@ -576,11 +590,18 @@ footer {
     width: 100%;
 }
 
-#one_column_footer_h2 {
+#footer_contacts_picture {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#one_column_footer_h2 {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* align-items: center; */
     background-image: url("./images/kundtjanst.svg");
     background-size: 62px;
     background-repeat: no-repeat;
@@ -611,13 +632,17 @@ footer {
     width: 62px;
     height: 62px;
 }
+
 #one_column_footer_title_text {
+    /* display: block; */
     font-weight: 900;
+    white-space: nowrap;
 }
 
 #one_column_footer_telephone_number_text {
     font-size: 20px;
     color: #ecdf8c;
+    white-space: nowrap;
 }
 
 #one_column_footer_text {
@@ -628,7 +653,6 @@ footer {
     background-image: url("./images/citationstecken_background.svg");
     background-repeat: no-repeat;
 }
-
 
 /* ------------------------- SOCIAL FOOTER */
 #social_footer {
