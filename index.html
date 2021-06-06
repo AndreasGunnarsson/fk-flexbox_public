@@ -3,25 +3,29 @@
         <meta charset="UTF-8">
         <title>Försakringskassan</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" media="screen and (max-width: 1024px)" href="below_1024.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="inside_main.css">
+        <link rel="stylesheet" href="aside.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" media="screen and (max-width: 1023px)" href="below_1024.css">
         <link rel="stylesheet" media="screen and (max-width: 889px)" href="below_890.css">
         <link rel="stylesheet" media="screen and (max-width: 639px)" href="below_640.css">
     </head>
     <body>
         <header>
-            <div id="inside_header">
+            <div id="inside_header_container">
                 <img id="header_logo" src="./images/logo.svg" alt="Försäkringskassans logotyp">
                 <div id="header_buttons_container">
                     <input type="text" placeholder="Sök här">
-                    <button class="header_buttons">
+                    <button class="header_button">
                         <img id="header_button_image_search" src="./images/header/magnifier.svg">
-                        <span class="header_text" style="font-weight: 400;">Sök</span>
+                        <span class="header_text" id="special_header_search_text">Sök</span>
                     </button>
-                    <button class="header_buttons">
+                    <button class="header_button">
                         <img id="header_button_image_avatar" src="./images/header/avatar.svg">
                         <span class="header_text">Logga in</span>
                     </button>
-                    <button class="header_buttons" id="special_button_no_margin_right">
+                    <button class="header_button" id="special_header_button_no_margin_right">
                         <img id="header_button_image_hamburger" src="./images/header/hamburger.svg">
                         <span class="header_text">Meny</span>
                     </button>
@@ -31,65 +35,66 @@
 
         <main>
             <div id="inside_main">
-<!-- ||||||||||||||||||| TOP ONE ROW -->
-                <div class="item_inside_aside" id="special_margin">
+
+                <!-- ONE COLUMN - TOP -->
+                <div class="item_inside_aside" id="special_top_row_margin">
                     <div class="inside_item_inside_aside">
                         <h4>Coronaviruset – det här gäller</h4>
-                        <div id="inside_main_top_item">
-                            <a href="https://duckduckgo.com" class="main_lower_links" id="main_top_special_link">
+                        <div id="inside_main_top_row_item">
+                            <a href="https://duckduckgo.com" class="main_lower_links" id="special_top_row_link">
                                 Här har vi samlat information om vad som gäller om ersättning för karens, smittbärarpenning, vab, ersättning för riskgrupper och andra ersättningar
                             </a>
-                            <img src="./images/main/main1.svg" class="inside_item_inside_aside_image" id="main_top_special_image">
-                        </div>
-                    </div>
-                </div>
-                <div class="two_column_wide_main_upper_lower">
-                     <div class="inside_two_column_wide_main_upper_lower">
-                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_foralder_border_color">
-                             <h2 class="main_two_column_h2" id="main_two_column_h2_foralder_background">Förälder
-                                 <!-- <a href="https://duckduckgo.com" class="main_lower_links">Förälder</a> -->
-                             </h2>
-                             <p class="inside_inside_two_column_wide_main_upper_lower_text">E-tjänster och information om föräldrapenning, vab, 10-dagar, graviditetspenning och andra ersättningar för dig som är eller ska bli förälder.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="two_column_wide_main_upper_lower">
-                     <div class="inside_two_column_wide_main_upper_lower">
-                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_sjuk_border_color">
-                            <h2 class="main_two_column_h2" id="main_two_column_h2_sjuk_background">Sjuk</h2>
-                            <p class="inside_inside_two_column_wide_main_upper_lower_text">E-tjänster och information om sjukpenning, arbetsskadeersättning och närståendepenning för dig som är sjuk eller vårdar en anhörig.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="two_column_wide_main_upper_lower">
-                     <div class="inside_two_column_wide_main_upper_lower">
-                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_arbetssokande_border_color">
-                            <h2 class="main_two_column_h2" id="main_two_column_h2_arbetssokande_background">Arbetssökande</h2>
-                            <p class="inside_inside_two_column_wide_main_upper_lower_text">E-tjänster och information om aktivitetsstöd, utvecklings- och etableringsersättning för dig som deltar i ett program hos Arbetsförmedlingen.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="two_column_wide_main_upper_lower">
-                     <div class="inside_two_column_wide_main_upper_lower">
-                         <div class="inside_inside_two_column_wide_main_upper_lower" id="main_funktionsnedsattning_border_color">
-                            <h2 class="main_two_column_h2" id="main_two_column_h2_funktionsnedsattning_background">Funktionsnedsättning</h2>
-                            <p class="inside_inside_two_column_wide_main_upper_lower_text">E-tjänster och information om assistansersättning, omvårdnadsbidrag, merkostnadsersättning, sjukersättning, aktivitetsersättning och bilstöd.</p>
+                            <img src="./images/main/main1.svg" class="inside_item_inside_aside_image" id="special_top_row_image">
                         </div>
                     </div>
                 </div>
 
-<!-- ||||||||||||||||||| MIDDLE -->
-                <div class="one_column_wide_main_middle">
-                    <div id="inside_one_column_middle1">
-                        <div class="inside_inside_two_column_wide_main_upper_lower main_lower_border_color" id="padding_and_border_right"> 
+                <!-- TWO COLUMN - UPPER -->
+                <div class="two_column_main">
+                     <div class="inside_two_column_main">
+                         <div class="inside_inside_two_column_main" id="main_foralder_border_color">
+                             <h2 class="two_column_upper_h2" id="two_column_upper_h2_foralder_background">Förälder</h2>
+                             <p class="two_column_upper_text">E-tjänster och information om föräldrapenning, vab, 10-dagar, graviditetspenning och andra ersättningar för dig som är eller ska bli förälder.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_main">
+                     <div class="inside_two_column_main">
+                         <div class="inside_inside_two_column_main" id="main_sjuk_border_color">
+                            <h2 class="two_column_upper_h2" id="two_column_upper_h2_sjuk_background">Sjuk</h2>
+                            <p class="two_column_upper_text">E-tjänster och information om sjukpenning, arbetsskadeersättning och närståendepenning för dig som är sjuk eller vårdar en anhörig.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_main">
+                     <div class="inside_two_column_main">
+                         <div class="inside_inside_two_column_main" id="main_arbetssokande_border_color">
+                             <h2 class="two_column_upper_h2" id="two_column_upper_h2_arbetssokande_background">Arbetssöka</h2>
+                            <p class="two_column_upper_text">E-tjänster och information om aktivitetsstöd, utvecklings- och etableringsersättning för dig som deltar i ett program hos Arbetsförmedlingen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="two_column_main">
+                     <div class="inside_two_column_main">
+                         <div class="inside_inside_two_column_main" id="main_funktionsnedsattning_border_color">
+                            <h2 class="two_column_upper_h2" id="two_column_upper_h2_funktionsnedsattning_background">Funktionsne</h2>
+                            <p class="two_column_upper_text">E-tjänster och information om assistansersättning, omvårdnadsbidrag, merkostnadsersättning, sjukersättning, aktivitetsersättning och bilstöd.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ONE COLUMN - MIDDLE -->
+                <div id="one_column_main_middle">
+                    <div id="inside_one_column_middle_left">
+                        <div class="inside_inside_two_column_main main_lower_border_color" id="special_padding_and_border_right"> 
                             <img src="./images/main/depressed-man.jpg" style="width: 100%;">
                             <h2 id="middle_h2">Nya riskgrupper för covid-19 från den 1 juni</h2>
                             <p class="middle_and_bottom_p">Regeringen har beslutat om att utöka diagnoslistan över riskgrupper för covid-19. Den nya diagnoslistan börjar gälla idag, 1&nbsp;juni och gäller retroaktivt från 1&nbsp;januari&nbsp;2021.</p>
                             <a href="https://duckduckgo.com" class="main_lower_links" style="margin-bottom: 1.25rem;">Nya riskgrupper för covid-19 från 1 juni</a>
                         </div>
                     </div>
-                    <div id="inside_one_column_middle2">
-                        <div id="inside_inside_one_column_middle2">
+                    <div id="inside_one_column_middle_right">
+                        <div id="inside_inside_one_column_middle_right">
                             <h3>Nyheter</h3>
                             <ul id="middle_ul">
                                 <li class="middle_li">
@@ -114,69 +119,70 @@
                     </div>
                 </div>
 
-                <div class="two_column_wide_main_upper_lower">
-                    <div class="inside_two_column_wide_main_upper_lower">
-                        <div class="inside_inside_two_column_wide_main_upper_lower main_lower_border_color">
-                            <h2 class="main_lower_h2">Samlad information för dig som</h2> 
-                            <ul class="main_lower_ul">
-                                <li class="main_lower_li">
+                <!-- TWO COLUMN - LOWER -->
+                <div class="two_column_main">
+                    <div class="inside_two_column_main">
+                        <div class="inside_inside_two_column_main main_lower_border_color">
+                            <h2 class="two_column_lower_h2">Samlad information för dig som</h2> 
+                            <ul class="two_column_lower_ul">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">studerar eller är ungdom</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">är företagare</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">ska resa, arbeta, flytta, studera eller få vård utomlands</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">ska flytta till, arbeta eller studera i Sverige</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">är nyanländ i Sverige (tigrinja, af soomaali, xxxxx xxxxxxx,xxx)</a>
                                 </li>
                             <ul>
                         </div>
                     </div>
                 </div>
-                <div class="two_column_wide_main_upper_lower">
-                    <div class="inside_two_column_wide_main_upper_lower">
-                        <div class="inside_inside_two_column_wide_main_upper_lower main_lower_border_color">
-                            <h2 class="main_lower_h2">Information, e-tjänster och blanketter för</h2> 
-                            <ul class="main_lower_ul">
-                                <li class="main_lower_li">
+                <div class="two_column_main">
+                    <div class="inside_two_column_main">
+                        <div class="inside_inside_two_column_main main_lower_border_color">
+                            <h2 class="two_column_lower_h2">Information, e-tjänster och blanketter för</h2> 
+                            <ul class="two_column_lower_ul">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Arbetsgivare</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Hälso- och sjukvården</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Tandvården</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Myndigheter och andra samarbetspartner</a>
                                 </li>
                             <ul>
                         </div>
                     </div>
                 </div>
-                <div class="two_column_wide_main_upper_lower">
-                    <div class="inside_two_column_wide_main_upper_lower">
-                        <div class="inside_inside_two_column_wide_main_upper_lower main_lower_border_color">
-                            <h2 class="main_lower_h2">Ersättningar A-Ö</h2> 
-                            <ul class="main_lower_ul" style="column-width: 140px; column-count: 2;">
-                                <li class="main_lower_li">
+                <div class="two_column_main">
+                    <div class="inside_two_column_main">
+                        <div class="inside_inside_two_column_main main_lower_border_color">
+                            <h2 class="two_column_lower_h2">Ersättningar A-Ö</h2> 
+                            <ul class="two_column_lower_ul" style="column-width: 140px; column-count: 2;">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Aktivitetsstöd</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Bostadsbidrag till barnfamiljer</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">EU-kort</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Barnbidrag</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Tandvårdsstöd</a>
                                 </li>
                             <ul>
@@ -184,27 +190,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="two_column_wide_main_upper_lower">
-                    <div class="inside_two_column_wide_main_upper_lower">
-                        <div class="inside_inside_two_column_wide_main_upper_lower main_lower_border_color">
-                            <h2 class="main_lower_h2">Om Försäkringskassan</h2>
-                            <ul class="main_lower_ul">
-                                <li class="main_lower_li">
+                <div class="two_column_main">
+                    <div class="inside_two_column_main">
+                        <div class="inside_inside_two_column_main main_lower_border_color">
+                            <h2 class="two_column_lower_h2">Om Försäkringskassan</h2>
+                            <ul class="two_column_lower_ul">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Vårt uppdrag</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Dina rättigheter och skyldigheter</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Kunskap och forskning</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Jobba hos oss</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Statistik och analys</a>
                                 </li>
-                                <li class="main_lower_li">
+                                <li class="two_column_lower_li">
                                     <a href="https://duckduckgo.com" class="main_lower_links">Tillgänglighetsredogörelse</a>
                                 </li>
                             <ul>
@@ -212,11 +218,11 @@
                     </div>
                 </div>
 
-<!-- ||||||||||||||||||| BOTTOM -->
-                <div id="main_bottom_one_column">
+                <!-- ONE COLUMN - BOTTOM -->
+                <div id="one_column_bottom">
                     <div id="inside_one_column_bottom">
-                        <div class="inside_inside_two_column_wide_main_upper_lower main_lower_border_color">
-                            <h2 class="main_lower_h2">E-tjänster, blanketter och informationsmaterial</h2>
+                        <div class="inside_inside_two_column_main main_lower_border_color">
+                            <h2 class="two_column_lower_h2">E-tjänster, blanketter och informationsmaterial</h2>
                             <p class="middle_and_bottom_p">Hitta e-tjänster, pappersblanketter, intyg, EU-kort, broschyrer, aktuella belopp samt ljud- och punktskrift.</p>
                             <a href="https://duckduckgo.com" class="main_lower_links">E-tjänster, blanketter och informationsmaterial</a>
                         </div>
@@ -224,7 +230,7 @@
                 </div>
             </div>
 
-<!-- ||||||||||||||||||| ASIDE -->
+            <!-- ASIDE -->
             <aside>
                 <div class="item_inside_aside" id="special_aside1">
                     <div class="inside_item_inside_aside">
@@ -243,15 +249,13 @@
                     </div>
                 </div>
                 <div class="item_inside_aside" id="special_aside3">
-                    <div class="inside_item_inside_aside" id="inside_item_inside_aside_blue_border">
+                    <div class="inside_item_inside_aside" id="special_inside_item_inside_aside_blue_border">
                         <h4 class="h4_aside">Har någon gjort dig illa?</h4>
                         <img src="./images/main/aside3.svg" class="inside_item_inside_aside_image">
                         <p class="inside_item_inside_aside_text"></p>
                         <a class="main_lower_links">Du har rätt till ett liv fritt från våld</a>
                     </div>
                 </div>
-            <!-- </aside> -->
-            <!-- <aside class="aside2"> -->
                 <div class="item_inside_aside" id="special_aside4">
                     <div class="inside_item_inside_aside">
                         <h4 class="h4_aside">Missa inte ditt tandvårdsbidrag!</h4>
@@ -273,53 +277,53 @@
 
 <!-- ||||||||||||||||||| FOOTER -->
         <footer>
-            <div id="inside_footer_container" class="padding_footer">
-                <div id="items_container">
-                    <div id="one_column_footer">
-                        <div id="inside_one_column_footer">
-                            <div id="footer_contacts_picture">
-                                <img src="./images/kundtjanst.svg" id="one_column_footer_image">
-                                <!-- <h2 id="one_column_footer_h2">Title</h2> -->
-                                <span id="one_column_footer_title_text" class="text_color_white">Kundcenter för privatperson</span>
-                                <span id="one_column_footer_telephone_number_text">0771-524 524</span>
-                            </div>
-                            <p id="one_column_footer_text" class="text_color_white">Måndag-fredag: 8-16</p>
-                            <p id="one_column_footer_text" class="text_color_white">Lördag-söndag: stängt</p>
-                            <p id="one_column_footer_text" class="text_color_white">Helgdag: stängt</p>
-                            <br>
-                            <a href="https://duckduckgo.com" class="links_footer">Fler kontaktuppgifter</a>
-                        </div>
-                    </div>
+            <!-- <div id="inside_footer_container" class="padding_footer"> -->
+            <!--     <div id="items_container"> -->
+            <!--         <div id="one_column_footer"> -->
+            <!--             <div id="inside_one_column_footer"> -->
+            <!--                 <div id="footer_contacts_picture"> -->
+            <!--                     <img src="./images/kundtjanst.svg" id="one_column_footer_image"> -->
+            <!--                     <!-1- <h2 id="one_column_footer_h2">Title</h2> -1-> -->
+            <!--                     <span id="one_column_footer_title_text" class="text_color_white">Kundcenter för privatperson</span> -->
+            <!--                     <span id="one_column_footer_telephone_number_text">0771-524 524</span> -->
+            <!--                 </div> -->
+            <!--                 <p id="one_column_footer_text" class="text_color_white">Måndag-fredag: 8-16</p> -->
+            <!--                 <p id="one_column_footer_text" class="text_color_white">Lördag-söndag: stängt</p> -->
+            <!--                 <p id="one_column_footer_text" class="text_color_white">Helgdag: stängt</p> -->
+            <!--                 <br> -->
+            <!--                 <a href="https://duckduckgo.com" class="links_footer">Fler kontaktuppgifter</a> -->
+            <!--             </div> -->
+            <!--         </div> -->
 
-                    <div id="two_column_footer_container">
-                        <!-- <div class="inside_footer_col" style="background-color: peru"> -->
-                        <div class="two_column_width" style="background-color: peru">
-                            <a href="https://duckduckgo.com" class="links_footer">Om Försäkringskassan</a>
-                            <br>
-                            <a href="https://duckduckgo.com" class="links_footer">Press</a>
-                            <br>
-                            <a href="https://duckduckgo.com" class="links_footer">Om webbplatsen</a>
-                            <br>
-                            <a href="https://duckduckgo.com" class="links_footer">Utbetalningsdatum och handläggningstider</a>
-                            <br>
-                            <a href="https://duckduckgo.com" class="links_footer">Behandling av personuppgifter</a>
-                            <hr>
-                            <a href="https://duckduckgo.com" class="links_footer">Information in other languages</a>
-                        </div>
+            <!--         <div id="two_column_footer_container"> -->
+            <!--             <!-1- <div class="inside_footer_col" style="background-color: peru"> -1-> -->
+            <!--             <div class="two_column_width" style="background-color: peru"> -->
+            <!--                 <a href="https://duckduckgo.com" class="links_footer">Om Försäkringskassan</a> -->
+            <!--                 <br> -->
+            <!--                 <a href="https://duckduckgo.com" class="links_footer">Press</a> -->
+            <!--                 <br> -->
+            <!--                 <a href="https://duckduckgo.com" class="links_footer">Om webbplatsen</a> -->
+            <!--                 <br> -->
+            <!--                 <a href="https://duckduckgo.com" class="links_footer">Utbetalningsdatum och handläggningstider</a> -->
+            <!--                 <br> -->
+            <!--                 <a href="https://duckduckgo.com" class="links_footer">Behandling av personuppgifter</a> -->
+            <!--                 <hr> -->
+            <!--                 <a href="https://duckduckgo.com" class="links_footer">Information in other languages</a> -->
+            <!--             </div> -->
 
-                        <div class="two_column_width" id="footer_visdomshord">
-                            <p class="text_color_white">
-                                Vår vision är ett samhälle där människor känner trygghet om livet tar en ny vändning.
-                            </p>
-                            <img src="./images/logo.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--             <div class="two_column_width" id="footer_visdomshord"> -->
+            <!--                 <p class="text_color_white"> -->
+            <!--                     Vår vision är ett samhälle där människor känner trygghet om livet tar en ny vändning. -->
+            <!--                 </p> -->
+            <!--                 <img src="./images/logo.svg"> -->
+            <!--             </div> -->
+            <!--         </div> -->
+            <!--     </div> -->
+            <!-- </div> -->
         </footer>
 
         <div id="social_footer">
-            <div id="inside_social_footer" class="padding_footer">
+            <div id="inside_social_footer_container" class="padding_footer">
                 <!-- <div id="social_items"> -->
                     <span id="social_text">Följ oss på</span>
                     <a class="social_links" id="social_facebook" href="https://duckduckgo.com">Facebook</a>

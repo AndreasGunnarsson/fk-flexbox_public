@@ -1,115 +1,53 @@
+/* Allt i denna filen går ut på att ändra saker på hemsidan då bredden går under 640 pixlar. */
+
+/* ------------ Main */
 main {
-    /* margin: 32px auto 40px; */
-    /* BUGGADE LOSS MED 16px (som används på orginal-sidan). */
-    /* TROR ATT DE HAR EN TILL DIV SOM TAR -0.75 rem PÅ VARJE SIDA.
-     *KVAR BLIR därmed 16-12 = 4px.
-    /* padding: 8px 16px 4px; */
-    /* padding: 8px 4px 4px; */
-    /* padding: 8px 0px 4px; */
-    /* display: flex; */
+    margin: 16px auto 40px;
     flex-direction: column;
-    /* max-width: calc(1200px - 32px); */
-    /* max-width: 1200px; */
-    /* background-color: purple; */
-    /* justify-content: center; */
-    /* flex-wrap: nowrap; */
-    /* margin-top: 2rem; */
-    /* padding: 10px; */
 }
 
 #inside_main {
-    /* display: flex; */
     flex-direction: column;
     flex-wrap: nowrap;
-    /* flex-shrink: 1; */
-    /* flex-grow: 1; */
     min-width: 100%;
-    /* max-width: 894px; */
-    /* background-color: gold; */
-    /* padding: 0; */
 }
  
-.two_column_wide_main_upper_lower {
-    /* flex-shrink: 1; */ 
-    /* flex-basis: calc(50% - 1.5rem); */
-    /* width: 100%; */
+.two_column_main {
     flex-basis: 0;
-    /* width: 100%; */
-    /* flex-grow: 1; */
-    /* min-width: calc(50% - 1.5rem); */ 
-    /* width: 420px; */
-    /* flex-grow: 1; */
-    /* flex-basis: 0; */
-    /* background-color: lightsalmon; */
-    /* PADDING FUNKAR INTE (används i orginalet) */
     padding-left: 0;
     padding-right: 0;
 }
 
-.inside_two_column_wide_main_upper_lower {
-    /* max-width är viktigt att kolla i alla versioner (<1024, <640) */
-    /* flex-shrink: 1; */
+.inside_two_column_main {
     min-width: 100%;
     max-width: 0;
-    /* background-color: fuchsia; */
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-    /* margin-bottom: 1.5rem; */
-    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
 }
 
-.main_two_column_h2 {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: nowrap; */
-    /* align-items: center; */
-
+/* .main_two_column_h2 { */
+.two_column_upper_h2 {
     background-size: 40px;
-    /* background-repeat: no-repeat; */
-    /* background-position: left; */
     height: 40px;
     padding-left: 48px;
     font-size: 1.3rem;
-    /* margin-bottom: 1rem; */
-    /* margin-top: 0; */
-    /* font-size: 1.75rem; */
 }
-/* ---------------------- TOP MAIN */
-/* .item_inside_aside { */
-/*     min-width: 50%; */ 
-    /* width: calc(100%-3.75rem); */
-    /* width: 95%; */
-    /* flex-grow: 2; */
-    /* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. */
-    /* background: #ffffff; */
-    /* background-color: aqua; */
-    /* padding: 0 1rem 2rem; */
-    /* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? */
-    /* margin: 0 0 1.5rem; */
-    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
-/* } */
 
-#special_margin {
+#special_top_row_margin {
     margin: 0 0 1.5rem;
 }
 
-#inside_main_top_item {
-    background-color: fuchsia;
+#inside_main_top_row_item {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    /* margin-left: -.75rem; */
-    /* margin-right: -.75rem; */
 }
 
-#main_top_special_link {
+#special_top_row_link {
     order: 2;
     width: 100%;
 }
 
-#main_top_special_image {
+#special_top_row_image {
     order: 1;
     width: 100%;
     padding-right: .75rem;
@@ -117,98 +55,47 @@ main {
 }
 
 h4 {
-    /* color: #1b1e23; */
-    /* font-weight: 900; */
-    /* margin: .2rem 0 .5rem; */
-    /* line-height: 1.4; */
-    /* font-style: normal; */
-    /* font-size: 1.25rem; */
     font-size: 1rem;
 }
 
-/* ---------------------- TOP MAIN END */
-
-
-#main_bottom_one_column {
-    /* padding-top: 16px; */
-    /* padding-bottom: 16px; */
-    /* margin: 0 .75rem 1.5rem; */
-    /* margin: 0 0 1.5rem; */
+#one_column_bottom {
     margin: 0;
     width: 100%;
 }
 
-#inside_one_column_bottom {
-    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
-    /* background-color: green; */
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-    /* margin-bottom: 24px; */
-}
-
-.main_lower_h2 {
+.two_column_lower_h2 {
     font-size: 1.125rem;
-    /* font-size: 1.375rem; */
-    /* line-height: 1.4; */
-    /* color: #1b1e23; */
-    /* font-weight: 900; */
-    /* margin-top: 0.2rem; */
-    /* margin-bottom: 0.5rem; */
 }
 
-.one_column_wide_main_middle {
-    /* display: flex; */
+#one_column_main_middle {
     flex-direction: column;
-    /* flex-grow: 3; */
-    /* min-width: 100%; */
-    /* background-color: forestgreen; */
-    /* margin-bottom: 1.5rem; */
     padding-left: 0;
     padding-right: 0;
-    /* max-width: calc(894px - 1.5rem); */
 }
 
-#inside_one_column_middle1 {
-    /* background-color: firebrick; */
-    /* max-width: 522px; */
+#inside_one_column_middle_left {
     max-width: 100%;
-    /* padding-top: 1rem; */
     padding-bottom: 0;
-    /* padding-right: 1rem; */
 }
 
-#inside_one_column_middle2 {
+#inside_one_column_middle_right {
     border-left-color: #5f9e6c;
     border-left-style: solid;
     border-left-width: 2px;
     padding: 1rem;
-    /* padding-top: 2rem; */
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1.5rem; */
-    /* background-color: dimgrey; */
 }
 
-#inside_inside_one_column_middle2 {
-    /* TODO: MÅSTE FIXA DENNA. KAN BEHÖVA EN NY DIV. */
-    /* TODO: BÅDE DENNA OCH middle1 ska ha en border till vänster som hänger ihop. */
+#inside_inside_one_column_middle_right {
     border-top: 1px solid #ddd;
     padding-top: 2rem;
-    /* padding-left: 1.5rem; */
-    /* padding-right: 1rem; */
-    /* background-color: lime; */
 }
 
-#padding_and_border_right {
+#special_padding_and_border_right {
     padding-right: 1rem;
-    /* border-right: 1px solid #ddd; */
 }
 
 #middle_h2 {
     font-size: 1.3rem;
-    /* color: #1b1e23; */
-    /* margin: .2rem 0 .5rem; */
-    /* font-weight: 900; */
-    /* line-height: 1.4; */
 }
 
 aside {
@@ -216,28 +103,9 @@ aside {
     flex-wrap: nowrap;
     justify-content: center;
     padding: 0;
-    /* flex-shrink: 2; */
-    /* flex-grow: 2; */
-    /* /1* flex-basis: 0; *1/ */
-    /* /1* flex-basis: 25%; *1/ */
-    /* padding-left: .75rem; */
-    /* padding-right: .75rem; */ 
-    /* background-color: fuchsia; */
-    /* min-width: 230px; */
-    /* max-width: 274px; */
 }
 
-/* .item_inside_aside { */
-/*     /1* min-width: 50%; *1/ */ 
-/*     /1* flex-grow: 2; *1/ */
-/*     /1* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. *1/ */
-/*     /1* background: #ffffff; *1/ */
-/*     /1* background-color: aqua; *1/ */
-/*     padding: 0 1rem 2rem; */
-/*     /1* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? *1/ */
-/*     margin: 0 0 1.5rem; */
-/*     box-shadow: 0 1px 4px rgba(0,0,0,.3); */
-/* } */
+/* Efter att ha ändrat order i "below_1024.css" så måste de ändras tillbaka då man under 640 pixlar återgår till en kolumn igen. */
 #special_aside1 {
     margin-right: 0;
     order: 1;
@@ -249,8 +117,6 @@ aside {
 }
 
 #special_aside3 {
-    /* align-self: flex-start; */
-    /* flex-basis: calc(50% - 3.5rem); */
     max-width: 100%;
     order: 3;
 }
@@ -264,105 +130,35 @@ aside {
     margin-left: 0;
     order: 5;
 }
-/* .inside_inside_two_column_wide_main_upper_lower { */
-/*     padding-left: 1rem; */
-/*     padding-right: 1rem; */
-/*     background-color: #ffffff; */
-/*     border-left-style: solid; */
-/*     border-left-width: 2px; */
-/*     /1* TODO: LOWER HAR 2px PADDING I BOTTEN. *1/ */
-/* } */
-
-/* ----------------------------------------- OLD BELOW */
-/* /1* header { *1/ */
-/* /1*     background-color: darkgray; *1/ */
-/* /1* } *1/ */
-
-/* main { */
-/*     /1* margin: auto; *1/ */
-/*     /1* margin-top: 32px; *1/ */
-/*     /1* margin-bottom: 40px; *1/ */
-/*     display: flex; */
-/*     /1* flex-direction: column; *1/ */
-/*     margin: 32px auto 40px; */
-/*     padding: 8px 10px 4px; */
-/*     max-width: 1200px; */
-/*     background-color: brown; */
-/* } */
-
-/* .two_cols { */
-/*     background-color: firebrick; */
-/*     /1* display: flex; *1/ */
-/*     flex-direction: column; */
-/*     justify-content: space-around; */
-/* } */
-
-/* /1* .one_col { *1/ */
-/* /1*     background-color: darkgreen; *1/ */
-/* /1*     display: flex; *1/ */
-/* /1*     flex-direction: column; *1/ */
-/* /1*     width: 100% *1/ */
-/* /1* } *1/ */
-
-/* /1* main    { *1/ */
-/* /1*     flex-direction: column; *1/ */
-/* /1*     /2* flex: 3 0px; *2/ *1/ */
-/* /1* } *1/ */
-
-/* /1* aside { *1/ */
-/* /1*     /2* width: 200px; *2/ *1/ */
-/* /1*     /2* display: flex; *2/ *1/ */
-/* /1*     /2* flex: 1 100%; *2/ *1/ */
-/* /1*     flex-direction: column; *1/ */
-/* /1*     flex-wrap: nowrap; *1/ */
-/* /1*     width: 100%; *1/ */
-/* /1*     background-color: forestgreen; *1/ */
-/* /1* } *1/ */
-
-/* #aside_order_1 { */
-/*     order: 1; */
-/* } */
-/* #aside_order_2 { */
-/*     order: 2; */
-/* } */
-/* #aside_order_3 { */
-/*     order: 3; */
-/* } */
-/* #aside_order_4 { */
-/*     order: 4; */
-/* } */
-/* #aside_order_5 { */
-/*     order: 5; */
-/* } */
 
 /* ------------------- FOOTER */
 
-#items_container {
-    /* background-color: brown; */
-    /* display: flex; */
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-}
+/* #items_container { */
+/*     /1* background-color: brown; *1/ */
+/*     /1* display: flex; *1/ */
+/*     flex-direction: column; */
+/*     /1* justify-content: space-evenly; *1/ */
+/* } */
 
-#inside_one_column_footer {
-    /* background-color: olive; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* width: 100%; */
-    align-items: center;
-}
+/* #inside_one_column_footer { */
+/*     /1* background-color: olive; *1/ */
+/*     /1* display: flex; *1/ */
+/*     /1* flex-direction: column; *1/ */
+/*     /1* width: 100%; *1/ */
+/*     align-items: center; */
+/* } */
 
-#two_column_footer_container {
-    /* background-color: plum; */
-    /* display: flex; */
-    flex-direction: column;
-    width: 100%;
-    /* flex-basis: auto; */
-}
+/* #two_column_footer_container { */
+/*     /1* background-color: plum; *1/ */
+/*     /1* display: flex; *1/ */
+/*     flex-direction: column; */
+/*     width: 100%; */
+/*     /1* flex-basis: auto; *1/ */
+/* } */
 
-.two_column_width {
-    width: 100%;
-}
+/* .two_column_width { */
+/*     width: 100%; */
+/* } */
 
 /* ------------------- SOCIAL FOOTER */
 
@@ -371,64 +167,29 @@ aside {
     padding-right: 0;
 }
 
+/* Har en fast höjd. */
 #social_footer {
     height: 221px;
 }
 
-#inside_social_footer {
-    /* align-items: center; */
-    /* align-content: center; */
-    /* justify-content: center; */
-    /* padding: 1rem 0; */
-
-    /* position: relative; */
-    /* top: 50%; */
-    /* transform: translatey(-50%); */
-
+#inside_social_footer_container {
     height: 100%;
     max-width: 1200px;
-    /* display: flex; */
     flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
     width: 200px;
     margin: auto;
     flex-wrap: wrap;
-    /* justify-content: center; */
-
-    background-color: purple;
-    /* white-space: nowrap; */
 }
 
 #social_text {
     display: block;
     text-align: center;
     width: 100%;
-    /* font-size: 12px; */
-    color: brown;
 }
 
 .social_links {
-    /* font-size: 12px; */
-    /* text-decoration: none; */
-    /* border: none; */
-    /* color: #adadad; */
-    /* font-weight: 700; */
-    /* background-image: url("images/small.png"); */
     background-size: 20px;
-    /* background-repeat: no-repeat; */
-    /* background-position: 0; */
-    /* display: inline-block; */
-    /* padding: 5px 0 2px 20px; */
     padding: 5px 0 1rem 26px;
-    /* margin-left: 0; */
     margin: 0;
     width: 37%;
-
-    /* TODO: FIXA SÅ ATT WIDTH ÄR RÄTT HÄR. använd calc(). */
-
-    /* display: flex; */
-    /* align-items: center; */
-    /* align-content: center; */
 }

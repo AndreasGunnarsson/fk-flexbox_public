@@ -1,0 +1,51 @@
+/* Allt som är i <aside> är här. */
+/* Används också av översta raden/rutan i main som har samma styling. */ 
+
+.item_inside_aside {
+    min-width: 50%; 
+    flex-grow: 2;
+    background-color: #ffffff;
+    padding: 0 1rem 2rem;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+.item_inside_aside:hover {
+    box-shadow: 0 1px 5px rgba(0,0,0,.6);
+}
+
+/* En div inuti en div (med gruppen item_inside_aside) för att kunna få en border och som även är en behållare för allt innehåll nednaför. */
+.inside_item_inside_aside {
+    background-color: #ffffff;
+    border-top-color: #5f9e6c;
+    border-top-style: solid;
+    border-top-width: 6px;
+    padding-top: 1rem;
+}
+
+h4 {
+    color: #1b1e23;
+    font-weight: 900;
+    line-height: 1.4;
+    font-style: normal;
+    font-size: 1.25rem;
+    margin: 0 0 .5rem;
+}
+
+.inside_item_inside_aside_image {
+    padding-bottom: 0.5rem;
+}
+
+/* Används för <p>-taggen i vissa rutor av <aside> */
+.inside_item_inside_aside_text {
+    color: #1b1e23;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Alla har grön border förutom ett item i aside som har blå. */
+#special_inside_item_inside_aside_blue_border {
+    border-top-color: #4c669f;
+}

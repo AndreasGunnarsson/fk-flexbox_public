@@ -1,0 +1,104 @@
+/* Headern har alltid samma höjd så länge inte width är < 890 pixlar. */
+header {
+    background-color: #116a3e;
+    height: 83px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: #a6d0ab;
+    border-bottom-width: 4px;
+    box-shadow: 0 -2px 0 0 #0c7340,-2px 0 0 0 #0c7340,2px 0 0 0 #0c7340,0 0 2px 0 rgba(0,0,0,.5);
+}
+
+#inside_header_container {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: end;
+    height: 70px;
+}
+
+/* Försäkringskassan-loggan har en bestämd storlek så länge bredden är > 1023 pixlar. */
+#header_logo {
+    margin-top: 22px;
+    margin-left: 16px;
+    margin-bottom: 6px;
+    height: 42px;
+    width: 313px;
+}
+
+#header_buttons_container {
+    margin-top: 22px;
+    margin-right: 16px;
+    margin-bottom: 6px;
+    display: flex;
+}
+
+/* Används bara i header. Tillhör sök-knappen. */
+input {
+    width: 200px;
+    color: rgba(0,0,0,.4);
+    height: 44px;
+    border-radius: 2px;
+    border: 2px solid #8c8c8c;
+    font-size: .875rem;
+    padding: .5rem;
+}
+
+/* En knapp i header_bottons_container */
+.header_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #297952;
+    border: none;
+    margin-right: 24px;
+    padding-left: 0;
+    padding-right: 14px;
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,.3);
+}
+
+.header_button:hover {
+    background-color: #34805b;
+}
+
+/* Knappen längst till vänster (Meny) har ingen margin right */
+#special_header_button_no_margin_right {
+    margin-right: 0; 
+}
+
+/* Varje button har en image och alla har olika höjd/bredd samt margin. */
+#header_button_image_search {
+    width: 22px;
+    height: 22px;
+    margin: 11px 4px 11px 10px;
+}
+
+#header_button_image_avatar {
+    width: 18px;
+    height: 18px;
+    margin: 13px 8px 13px 14px;
+}
+
+#header_button_image_hamburger {
+    width: 19px;
+    height: 19px;
+    margin: 14px 8px 11px 14px;
+}
+
+/* Alla knappar använder denna text-formatering. */
+.header_text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Sök-knappen har annan font-weight. */
+#special_header_search_text {
+    font-weight: 400;
+}

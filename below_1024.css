@@ -1,103 +1,67 @@
+/* Allt i denna filen går ut på att ändra saker på hemsidan då bredden går under 1024 pixlar. */
+
 main    {
     flex-direction: column;
 }
 
+/* ------------ Header */
 input {
     width: 175px;
 }
 
 #header_logo {
-    /* TODO: ÄNDRAR STORLEK UNDER 1024 pixlar. */
-    /* width: 100%; */
-    /* margin-top: 22px; */
-    /* margin-left: 16px; */
-    /* margin-bottom: 6px; */
-    /* padding-left: 10px; */
     height: 42px;
     width: 298px;
-    /* width: 100%; */
 }
 
+/* ------------ Main */
 #inside_main {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* flex-shrink: 1; */
-    /* flex-grow: 1; */
-    /* width: 100%; */
     min-width: 0;
     max-width: 100%;
-    background-color: orange;
 }
 
 aside {
-    /* width: 100%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: dodgerblue;
     max-width: 100%;
 }
 
-.one_column_wide_main_middle {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-grow: 3; */
-    /* min-width: 100%; */
-    /* background-color: forestgreen; */
-    /* margin-bottom: 1.5rem; */
-    /* padding-left: 0.75rem; */
-    /* padding-right: 0.75rem; */
-    max-width: 100%; 
-}
-
-#inside_one_column_middle1 {
-    background-color: firebrick;
-    /* max-width: 60%; */
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
-}
-
-/* VI VILL HA 24px (1.5rem) emellan */
 .item_inside_aside {
     flex-basis: calc(50% - 3.5rem);
-    /* max-width: 430px; */
-    /* flex-shrink: 1; */
-    /* flex-basis: 400px; */
-    /* width: 40%; */
-    /* flex-basis: 10%; */
-    /* flex-shrink: 1; */
     min-width: 0; 
     /* flex-grow: 2; */
     /* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. */
     /* background: #ffffff; */
-    background-color: aqua;
     /* padding: 0 1rem 2rem; */
     /* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? */
     /* margin: 0 0 1.5rem; */
     /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
 }
-.inside_two_column_wide_main_upper_lower {
-    /* max-width är viktigt att kolla i alla versioner (<1024, <640) */
-    /* flex-shrink: 1; */
+
+/* Basklass för två kolumner i main. */
+.inside_two_column_main {
     min-width: 0;
     max-width: 100%;
-    background-color: violet;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-    /* margin-bottom: 1.5rem; */
-    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
 }
 
-/* MÅSTE FIXA I DENNA ISTÄLLET FÖR I item_inside_aside då den används både för top och aside. */
-#special_margin {
-    /* margin: 0 .75rem 1.5rem; */
+#one_column_main_middle {
+    max-width: 100%; 
+}
+
+#inside_one_column_middle_left {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+/* ONE COLUMN - TOP i main. */
+#special_top_row_margin {
     flex-basis: 0;
     min-width: 90%;
-    /* max-width: 100%; */
 }
 
+/* Alla rutor i aside får en annan ordning än när man har > 1023 pixlar då det går från en kolumn till två kolumner. Order har med flexbox att göra. */
 #special_aside1 {
     margin-right: .75rem;
     order: 1;
@@ -109,8 +73,6 @@ aside {
 }
 
 #special_aside3 {
-    /* align-self: flex-start; */
-    /* flex-basis: calc(50% - 3.5rem); */
     max-width: calc(50% - 2.75rem);
     order: 5;
 }
@@ -124,43 +86,17 @@ aside {
     margin-left: .75rem;
     order: 4;
 }
-/* #aside_order_1 { */
-/*     order: 1; */
-/* } */
-/* #aside_order_2 { */
-/*     order: 3; */
-/* } */
-/* #aside_order_3 { */
-/*     order: 5; */
-/* } */
-/* #aside_order_4 { */
-/*     order: 2; */
-/* } */
-/* #aside_order_5 { */
-/*     order: 4; */
-/* } */
+
 /* ---------------- FOOTER */
 
-#items_container {
-    /* background-color: brown; */
-    /* display: flex; */
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-}
+/* #items_container { */
+/*     flex-direction: column; */
+/* } */
 
-#one_column_footer {
-    /* background-color: pink; */
-    width: 100%;
-}
+/* #one_column_footer { */
+/*     width: 100%; */
+/* } */
 
-#two_column_footer_container {
-    /* background-color: plum; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    width: 100%;
-    /* flex-basis: auto; */
-}
-
-/* .two_column_width { */
-/*     width: 50%; */
+/* #two_column_footer_container { */
+/*     width: 100%; */
 /* } */

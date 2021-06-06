@@ -1,0 +1,264 @@
+/* Allt inuti den div med id:t "inside_main" är här. */
+
+
+/* ------------------------- ONE COLUMN - TOP */
+/* Översta raden/rutan i "inside_main" */
+/* Använder aside.css som bas då de har snarlik styling men "override:ar" vissa värden (se "special" nedan). */
+
+#inside_main_top_row_item {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#special_top_row_link {
+    width: 50%;
+}
+
+#special_top_row_image {
+    width: 50%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+
+#special_top_row_margin {
+    margin: 0 .75rem 1.5rem;
+}
+
+/* ------------------------- TWO COLUMN - BASE */
+/* Bas-klasser som används på flera ställen i "inside_main". */
+/* Identifieras genom att det är en ruta med en border av en viss färg på vänster sida. */
+
+/* Är inget son syns på sidan förutom att det ger en avgränsning mellan olika rutor. */
+.two_column_main {
+    flex-basis: calc(50% - 1.5rem);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* Inuti "two_column_main". Främsta syftet är att bordern ska få rätt höjd samt att sätta en min/max-width */ 
+.inside_two_column_main {
+    flex-shrink: 1;
+    min-width: 357px;
+    max-width: 423px;
+    background-color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+/* Här i är allt innehåll som t.ex. <h2>, <p> och <ul>. */
+.inside_inside_two_column_main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #ffffff;
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+
+/* ------------------------- BORDER COLORS */
+/* Olika färger på borders för en ruta beroende på vad det är för ruta. Används endast för rutor med border på vänster sida. */
+
+#main_foralder_border_color {
+    border-color: #bf8a21;
+}
+
+#main_sjuk_border_color {
+    border-color: #4c669f;
+}
+
+#main_arbetssokande_border_color {
+    border-color: #d34503;
+}
+
+#main_funktionsnedsattning_border_color {
+    border-color: #a73a64;
+}
+
+/* Används längre ner i "inside_main"-kontainern. */
+.main_lower_border_color {
+    border-left-color: #5f9e6c;
+}
+
+/* ------------------------- TWO COLUMN - UPPER */
+/* För de översta fyra rutorna med rubrikerna "Förälder", "Sjuk", "Arbetssökande" och "Funktionsnedsättning". */ 
+/* Dessa rutor använder också klasserna som ligger under rubriken "TWO COLUMN - BASE" (se ovan). */ 
+
+.two_column_upper_h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    background-size: 56px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 56px;
+    padding-left: 76px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.75rem;
+    font-weight: 900;
+    /* overflow-wrap: break-word; */
+    /* word-wrap: break-word; */
+}
+
+.two_column_upper_text {
+    margin: 0;
+}
+
+/* Alla <h2> innehåller olika bakgrunds-bilder. */
+#two_column_upper_h2_foralder_background {
+    background-image: url("./images/main/foralder.svg");
+}
+
+#two_column_upper_h2_sjuk_background {
+    background-image: url("./images/main/sjuk.svg");
+}
+
+#two_column_upper_h2_arbetssokande_background {
+    background-image: url("./images/main/arbetssokande.svg");
+}
+
+#two_column_upper_h2_funktionsnedsattning_background {
+    background-image: url("./images/main/funktionsnedsattning.svg");
+}
+
+/* .main_two_column_h2 { */
+/* .inside_inside_two_column_wide_main_upper_lower_text { */
+/* #main_two_column_h2_foralder_background { */
+/* #main_two_column_h2_sjuk_background { */
+/* #main_two_column_h2_arbetssokande_background { */
+/* #main_two_column_h2_funktionsnedsattning_background { */
+/* ------------------------- ONE COLUMN - MIDDLE */
+/* Allt som är för mitten i "inside_main". Detta innebär rutan med rubriken "Nya riskgrupper.." samt "Nyheter". */
+
+/* .one_column_wide_main_middle { */
+#one_column_main_middle {
+    display: flex;
+    flex-direction: row;
+    /* flex-grow: 3; */
+    /* min-width: 100%; */
+    /* background-color: forestgreen; */
+    margin-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    max-width: calc(894px - 1.5rem);
+}
+
+/* #inside_one_column_middle1 { */
+#inside_one_column_middle_left {
+    background-color: #ffffff;
+    /* max-width: 522px; */
+    max-width: 60%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+/* #inside_one_column_middle2 { */
+#inside_one_column_middle_right {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: #ffffff;
+}
+
+#inside_inside_one_column_middle_right {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    background-color: #ffffff;
+}
+
+#special_padding_and_border_right {
+    padding-right: 1.5rem;
+    border-right: 1px solid #ddd;
+}
+
+/* Används för rubriken i "middle_left". */
+#middle_h2 {
+    font-size: 1.75rem;
+    color: #1b1e23;
+    margin: .2rem 0 .5rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+/* Används för rubriken i "middle_right". */
+h3 {
+    margin-top: 0.2rem;
+    margin-bottom: .5rem;
+    font-size: 1.375rem;
+    color: #1b1e23;
+    font-weight: 900;
+}
+
+#middle_ul {
+    list-style-type: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    /* padding: 0; */
+}
+
+.middle_li {
+    margin-bottom: 1rem;
+}
+
+.gray_text {
+    margin: 0;
+    color: #666;
+}
+
+/* ------------------------- TWO COLUMN - LOWER */
+/* Används i de fem rutor som är i nedersta delen. Dessa rutor använder i grunden klasserna som ligger under "TWO COLUMN - BASE" (se ovan) men har några extra. */
+
+/* Används även av "ONE COLUMN - BOTTOM" (se nedan). */
+.two_column_lower_h2 {
+    font-size: 1.375rem;
+    line-height: 1.4;
+    color: #1b1e23;
+    font-weight: 900;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.two_column_lower_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.two_column_lower_li {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+
+/* .main_lower_h2 { */
+/* .main_lower_ul { */
+/* .main_lower_li { */
+/* ------------------------- ONE COLUMN - BOTTOM */
+
+/* #main_bottom_one_column { */
+#one_column_bottom {
+    margin: 0 .75rem;
+    width: 100%;
+}
+
+#inside_one_column_bottom {
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    background-color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 24px;
+}
+
+/* Används både för "ONE COLUMN - BOTTOM" och "ONE COLUMN - MIDDLE" (se ovan). */
+.middle_and_bottom_p {
+    color: #1b1e23;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 1.25rem;
+}
