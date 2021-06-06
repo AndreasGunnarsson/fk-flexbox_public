@@ -102,8 +102,6 @@
     margin-top: 0;
     font-size: 1.75rem;
     font-weight: 900;
-    /* overflow-wrap: break-word; */
-    /* word-wrap: break-word; */
 }
 
 .two_column_upper_text {
@@ -127,22 +125,12 @@
     background-image: url("./images/main/funktionsnedsattning.svg");
 }
 
-/* .main_two_column_h2 { */
-/* .inside_inside_two_column_wide_main_upper_lower_text { */
-/* #main_two_column_h2_foralder_background { */
-/* #main_two_column_h2_sjuk_background { */
-/* #main_two_column_h2_arbetssokande_background { */
-/* #main_two_column_h2_funktionsnedsattning_background { */
 /* ------------------------- ONE COLUMN - MIDDLE */
 /* Allt som är för mitten i "inside_main". Detta innebär rutan med rubriken "Nya riskgrupper.." samt "Nyheter". */
 
-/* .one_column_wide_main_middle { */
 #one_column_main_middle {
     display: flex;
     flex-direction: row;
-    /* flex-grow: 3; */
-    /* min-width: 100%; */
-    /* background-color: forestgreen; */
     margin-bottom: 1.5rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -152,7 +140,6 @@
 /* #inside_one_column_middle1 { */
 #inside_one_column_middle_left {
     background-color: #ffffff;
-    /* max-width: 522px; */
     max-width: 60%;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
@@ -198,7 +185,6 @@ h3 {
     list-style-type: none;
     margin: 0 0 2rem;
     padding: 0;
-    /* padding: 0; */
 }
 
 .middle_li {
@@ -235,9 +221,6 @@ h3 {
     padding-bottom: 2px;
 }
 
-/* .main_lower_h2 { */
-/* .main_lower_ul { */
-/* .main_lower_li { */
 /* ------------------------- ONE COLUMN - BOTTOM */
 
 /* #main_bottom_one_column { */

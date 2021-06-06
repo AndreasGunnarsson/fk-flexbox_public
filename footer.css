@@ -1,22 +1,10 @@
 /* ------------------------- FOOTER - BASE */
-/* .links_footer { */
-/*     color: #ffffff; */
-/*     border-color: #ffffff; */
-/*     text-decoration: none; */
-/*     border-bottom: 2px solid white; */
-/*     line-height: 1.5; */
-/*     font-weight: 700; */
-/* } */
 
 /* Padding som ska användas i både "footer" och "social footer" */
 .padding_footer {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-
-/* .text_color_white { */
-/*     color: #ffffff; */
-/* } */
 
 /* ------------------------- FOOTER */
 footer {
@@ -27,90 +15,6 @@ footer {
     border-top-color: #0c4329;
     border-top-width: 0.5rem;
 }
-
-/* #inside_footer_container { */
-/*     margin: auto; */
-/*     max-width: 1200px; */
-/*     display: flex; */
-/*     flex-direction: column; */
-/*     flex-wrap: nowrap; */
-/*     justify-content: space-between; */
-/*     padding-top: 2rem; */
-/*     padding-bottom: 2rem; */
-/* } */
-
-/* #items_container { */
-/*     background-color: brown; */
-/*     display: flex; */
-/*     flex-direction: row; */
-/*     justify-content: space-evenly; */
-/* } */
-
-/* #one_column_footer { */
-/*     background-color: pink; */
-/*     width: 33.333%; */
-/* } */
-
-/* #inside_one_column_footer { */
-/*     background-color: olive; */
-/*     display: flex; */
-/*     flex-direction: column; */
-/*     width: 100%; */
-/* } */
-
-/* #footer_contacts_picture { */
-/*     display: flex; */
-/*     flex-direction: row; */
-/*     flex-wrap: wrap; */
-
-/* } */
-
-/* #one_column_footer_h2 { */
-/*     background-image: url("./images/kundtjanst.svg"); */
-/*     background-size: 62px; */
-/*     background-repeat: no-repeat; */
-/*     background-position: left; */
-/*     height: 62px; */
-/*     padding-left: 76px; */
-/*     margin-top: 0; */
-/* } */
-
-/* #two_column_footer_container { */
-/*     background-color: plum; */
-/*     display: flex; */
-/*     flex-direction: row; */
-/*     width: 66.666%; */
-/*     flex-basis: auto; */
-/* } */
-
-/* .two_column_width { */
-/*     width: 50%; */
-/* } */
-
-/* #one_column_footer_image { */
-/*     width: 62px; */
-/*     height: 62px; */
-/* } */
-
-/* #one_column_footer_title_text { */
-/*     font-weight: 900; */
-/*     white-space: nowrap; */
-/* } */
-
-/* #one_column_footer_telephone_number_text { */
-/*     font-size: 20px; */
-/*     color: #ecdf8c; */
-/*     white-space: nowrap; */
-/* } */
-
-/* #one_column_footer_text { */
-/*     line-height: 1.5; */
-/* } */
-
-/* #footer_visdomshord { */
-/*     background-image: url("./images/citationstecken_background.svg"); */
-/*     background-repeat: no-repeat; */
-/* } */
 
 /* ------------------------- SOCIAL FOOTER */
 
@@ -129,7 +33,6 @@ footer {
     align-items: center;
     align-content: center;
     margin: auto;
-    /* background-color: purple; */
 }
 
 #social_text {

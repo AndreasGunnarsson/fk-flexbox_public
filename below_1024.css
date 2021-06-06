@@ -31,13 +31,6 @@ aside {
 .item_inside_aside {
     flex-basis: calc(50% - 3.5rem);
     min-width: 0; 
-    /* flex-grow: 2; */
-    /* TODO: DE TVÅ RADERNA OVAN KAN VARA FULHACK? PÅVERKAR BÅDE ÖVERSTA I MAIN OCH ASIDE. */
-    /* background: #ffffff; */
-    /* padding: 0 1rem 2rem; */
-    /* TODO: DENNA PADDING KAN INTE STÄMMA? SPECEIELLT INTE 2rem? */
-    /* margin: 0 0 1.5rem; */
-    /* box-shadow: 0 1px 4px rgba(0,0,0,.3); */
 }
 
 /* Basklass för två kolumner i main. */
@@ -86,17 +79,3 @@ aside {
     margin-left: .75rem;
     order: 4;
 }
-
-/* ---------------- FOOTER */
-
-/* #items_container { */
-/*     flex-direction: column; */
-/* } */
-
-/* #one_column_footer { */
-/*     width: 100%; */
-/* } */
-
-/* #two_column_footer_container { */
-/*     width: 100%; */
-/* } */

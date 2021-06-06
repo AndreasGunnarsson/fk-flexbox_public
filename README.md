@@ -29,12 +29,11 @@ Har generellt varit mycket som man behövt kompromissa mest pga. tid men har i s
 - De rutor i main som har rubrikerna "Arbetssöka" och "Funktionsne" ska egentligen skriva ut "Arbetssökande" och "Funktionsnedsättning". Problemet jag stötte på var att om man skriver ut hela ordet så kommer flexbox inte bete sig önskevärt mellan 640 och 1024 pixlar bred sida då orden inte wrappas (som de gör på orginal-sidan). Testat med word-wrap men antar de skulle behöva haft . Också för sent i prcossen för att undersöka vidare.
 - Diverse småsaker när det kommer till stylingen..
 
-Upplägget
----------
+Upplägget (filer och kod)
+-------------------------
+- styles.css kan ses som en grund för hela sidan.
+- Alla css-filer med prefixet "below" är filer som körs då sidan går under en viss bredd. T.ex. "below_1024.css" exekveras då sidan är under 1024 pixlar bred.
+- inside_main.css är allt i "main". aside.css innehåller den "sidebar" som är till höger då sidan är över 1023 pixlar bred.
 - Kommenterat en del i css-filerna som förhoppningsvis förklarar det mesta av vart man är.
 - Id:n som har prefixet "special" är oftast för att göra en "override" på något en tillhörande klass till samma element använder.
 - inside- och inside_inside-prefixen till ett id eller en klass beskriver oftast en div i en annan div.
-
-Resultat
---------
-Kommentera kod.
